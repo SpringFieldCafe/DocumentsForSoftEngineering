@@ -1,4 +1,4 @@
-\documentclass[UTF8]{ctexart}
+\documentclass[UTF-8]{ctexart}
 \usepackage{geometry}
 \geometry{a4paper, margin=2cm}
 \usepackage{graphicx}
@@ -132,9 +132,9 @@ ISBN & 国际标准书号，图书的唯一标识符 \\
 \end{center}
 
 \subsubsection{子模块分析}
-
 \paragraph{查询图书用例分析及建模}
-\begin{table}[h!]
+\leavevmode 
+\begin{table}[htbp]
 \centering
 \begin{tabular}{|p{3cm}|p{12cm}|}
 \hline
@@ -156,8 +156,9 @@ ISBN & 国际标准书号，图书的唯一标识符 \\
 \caption{查询图书用例分析}
 \end{table}
 
-\subsubsection{新增图书用例分析及建模}
-\begin{table}[h!]
+\paragraph{新增图书用例分析及建模}
+\leavevmode 
+\begin{table}[htbp]
 \centering
 \begin{tabular}{|p{3cm}|p{12cm}|}
 \hline
@@ -179,8 +180,9 @@ ISBN & 国际标准书号，图书的唯一标识符 \\
 \caption{新增图书用例分析}
 \end{table}
 
-\subsubsection{修改图书信息用例分析及建模}
-\begin{table}[h!]
+\paragraph{修改图书信息用例分析及建模}
+\leavevmode 
+\begin{table}[htbp]
 \centering
 \begin{tabular}{|p{3cm}|p{12cm}|}
 \hline
@@ -202,8 +204,9 @@ ISBN & 国际标准书号，图书的唯一标识符 \\
 \caption{修改图书信息用例分析}
 \end{table}
 
-\subsubsection{删除图书用例及建模}
-\begin{table}[h!]
+\paragraph{删除图书用例及建模}
+\leavevmode 
+\begin{table}[htbp]
 \centering
 \begin{tabular}{|p{3cm}|p{12cm}|}
 \hline
@@ -217,7 +220,7 @@ ISBN & 国际标准书号，图书的唯一标识符 \\
 \hline
 \textbf{基本事件流} & 1. 管理员在图书查询结果中，进行删除 2. 系统弹出二次确认弹窗，提示管理员确认删除操作3. 管理员确认删除，系统校验该图书是否存在未归还的借阅记录4. 校验无未归还记录，系统从存储中删除该图书数据5. 系统提示，刷新图书列表，完成操作 \\
 \hline
-\textbf{意外事件流} & 1. 若该图书存在未归还的借阅记录，系统提示 “该图书有未归还的借阅记录，终止操作2. 若管理员取消确认，系统终止删除操作，保留原数据3. 若数据删除失败，系统提示 ，保留原数据 \\
+\textbf{意外事件流} & 1. 若该图书存在未归还的借阅记录，系统提示 "该图书有未归还的借阅记录"，终止操作2. 若管理员取消确认，系统终止删除操作，保留原数据3. 若数据删除失败，系统提示 ，保留原数据 \\
 \hline
 \textbf{活动图} & \\
 \hline
@@ -225,10 +228,10 @@ ISBN & 国际标准书号，图书的唯一标识符 \\
 \caption{删除图书用例分析}
 \end{table}
 
-\subsection{借阅管理用例}
 
-\subsubsection{借阅图书用例及建模}
-\begin{table}[h!]
+\paragraph{借阅图书用例及建模}
+\leavevmode 
+\begin{table}[htbp]
 \centering
 \begin{tabular}{|p{3cm}|p{12cm}|}
 \hline
@@ -242,7 +245,7 @@ ISBN & 国际标准书号，图书的唯一标识符 \\
 \hline
 \textbf{基本事件流} & 1. 管理员进入借阅操作页面2. 管理员录入图书 ISBN、借阅人姓名，提交借阅请求3. 系统根据 ISBN 查询目标图书，校验图书是否存在4. 系统校验图书库存是否大于 05. 系统校验该借阅人是否存在该图书的未归还借阅记录6. 所有校验通过，系统生成借阅记录，记录借阅时间、借阅人、图书 ISBN 等信息7. 系统扣减对应图书的库存数量8. 系统提示 ，更新借阅记录列表，完成操作 \\
 \hline
-\textbf{意外事件流} & 1. 若 ISBN 对应的图书不存在，系统提示 ，终止操作2. 若图书库存为 0，系统提示 ，终止操作3. 若该借阅人已有该图书的未归还记录，系统提示 ，无法重复借阅”，终止操作4. 若借阅人姓名为空，系统提示，终止提交5. 若数据保存失败，系统提示 ，回滚库存扣减与记录生成操作 \\
+\textbf{意外事件流} & 1. 若 ISBN 对应的图书不存在，系统提示 ，终止操作2. 若图书库存为 0，系统提示 ，终止操作3. 若该借阅人已有该图书的未归还记录，系统提示 "无法重复借阅"，终止操作4. 若借阅人姓名为空，系统提示，终止提交5. 若数据保存失败，系统提示 ，回滚库存扣减与记录生成操作 \\
 \hline
 \textbf{活动图} & \\
 \hline
@@ -250,8 +253,9 @@ ISBN & 国际标准书号，图书的唯一标识符 \\
 \caption{借阅图书用例分析}
 \end{table}
 
-\subsubsection{归还图书用例及建模}
-\begin{table}[h!]
+\paragraph{归还图书用例及建模}
+\leavevmode 
+\begin{table}[htbp]
 \centering
 \begin{tabular}{|p{3cm}|p{12cm}|}
 \hline
@@ -273,8 +277,9 @@ ISBN & 国际标准书号，图书的唯一标识符 \\
 \caption{归还图书用例分析}
 \end{table}
 
-\subsubsection{查看借阅记录用例及建模}
-\begin{table}[h!]
+\paragraph{查看借阅记录用例及建模}
+\leavevmode 
+\begin{table}[htbp]
 \centering
 \begin{tabular}{|p{3cm}|p{12cm}|}
 \hline
