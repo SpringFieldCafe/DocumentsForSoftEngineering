@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.11)  12 MAR 2026 22:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.11)  12 MAR 2026 23:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -733,35 +733,35 @@ Package pdftex.def Info: DeleteBookActivity.png  used on input line 453.
 <DataFlowDiagram.png, id=268, 1984.41376pt x 1690.315pt>
 File: DataFlowDiagram.png Graphic file (type png)
 <use DataFlowDiagram.png>
-Package pdftex.def Info: DataFlowDiagram.png  used on input line 484.
+Package pdftex.def Info: DataFlowDiagram.png  used on input line 485.
 (pdftex.def)             Requested size: 435.32422pt x 370.78719pt.
  [15 <./DataFlowDiagram.png>]
 <ControlFlowDiagram.png, id=279, 364.36125pt x 396.98312pt>
 File: ControlFlowDiagram.png Graphic file (type png)
 <use ControlFlowDiagram.png>
-Package pdftex.def Info: ControlFlowDiagram.png  used on input line 508.
+Package pdftex.def Info: ControlFlowDiagram.png  used on input line 509.
 (pdftex.def)             Requested size: 386.95897pt x 421.61786pt.
  [16 <./ControlFlowDiagram.png>]
-Overfull \hbox (58.9979pt too wide) in paragraph at lines 522--523
+Overfull \hbox (58.9979pt too wide) in paragraph at lines 523--524
 []\C70/rm/bx/n/10.53937/4e ^^Z \C70/rm/bx/n/10.53937/52 ° \C70/rm/bx/n/10.53937/7b ° \C70/rm/bx/n/10.53937/74 ^^F \C70/rm/bx/n/10.53937/53 ^^E |\C70/rm/bx/n/10.53937/ff ^^H|\OT1/cmr/bx/n/10.53937 Managers|\C70/rm/bx/n/10.53937/ff 	||\C70/rm/m/n/10.53937/ff ^^Z| \C70/rm/m/n/10.53937/7c ˚ \C70/rm/m/n/10.53937/7e ﬂ \C70/rm/m/n/10.53937/76 Ñ \C70/rm/m/n/10.53937/4e ^^Z \C70/rm/m/n/10.53937/52 ° \C70/rm/m/n/10.53937/90 ; \C70/rm/m/n/10.53937/8f ë \C70/rm/m/n/10.53937/5c B \C70/rm/m/n/10.53937/53 ^^E|\C70/rm/m/n/10.53937/ff ^^L| \C70/rm/m/n/10.53937/68 8 \C70/rm/m/n/10.53937/5f √ \C70/rm/m/n/10.53937/4e ^^Z \C70/rm/m/n/10.53937/52 ° \C70/rm/m/n/10.53937/89 ƒ \C70/rm/m/n/10.53937/52 ^^Y \C70/rm/m/n/10.53937/76 Ñ \C70/rm/m/n/10.53937/62 g \C70/rm/m/n/10.53937/88 L \C70/rm/m/n/10.53937/53 U \C70/rm/m/n/10.53937/51 C|\C70/rm/m/n/10.53937/ff ^^L| \C70/rm/m/n/10.53937/53 ^^E \C70/rm/m/n/10.53937/54 + \C70/rm/m/n/10.53937/56 ˛ \C70/rm/m/n/10.53937/4e f \C70/rm/m/n/10.53937/7b ° \C70/rm/m/n/10.53937/74 ^^F \C70/rm/m/n/10.53937/56 h |\C70/rm/m/n/10.53937/ff ^^H|\OT1/cmr/m/n/10.53937 BookManager|\C70/rm/m/n/10.53937/ff 	||\C70/rm/m/n/10.53937/30 ^^A|
  []
 
 <PackageAnalysis.png, id=288, 416.55624pt x 309.155pt>
 File: PackageAnalysis.png Graphic file (type png)
 <use PackageAnalysis.png>
-Package pdftex.def Info: PackageAnalysis.png  used on input line 530.
+Package pdftex.def Info: PackageAnalysis.png  used on input line 531.
 (pdftex.def)             Requested size: 386.95897pt x 287.20454pt.
 [17 <./PackageAnalysis.png>]
 <BookState.png, id=295, 296.10625pt x 298.11375pt>
 File: BookState.png Graphic file (type png)
 <use BookState.png>
-Package pdftex.def Info: BookState.png  used on input line 561.
+Package pdftex.def Info: BookState.png  used on input line 562.
 (pdftex.def)             Requested size: 386.95897pt x 389.5948pt.
  [18 <./BookState.png>]
 <Sequence.png, id=301, 160.09813pt x 305.64188pt>
 File: Sequence.png Graphic file (type png)
 <use Sequence.png>
-Package pdftex.def Info: Sequence.png  used on input line 586.
+Package pdftex.def Info: Sequence.png  used on input line 587.
 (pdftex.def)             Requested size: 268.1324pt x 511.88916pt.
  [19 <./Sequence.png>] [20] (./ÈúÄÊ±ÇÂàÜÊûê.aux)
  ***********
@@ -770,15 +770,15 @@ L3 programming layer <2022/07/14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 10768 strings out of 467525
- 217795 string characters out of 5411615
+ 10765 strings out of 467525
+ 217740 string characters out of 5411615
  636171 words of memory out of 5000000
- 39145 multiletter control sequences out of 15000+600000
+ 39142 multiletter control sequences out of 15000+600000
  685481 words of font info for 248 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,15n,93p,767b,363s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><d:/program/latex/TexLive/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:/program/latex/TexLive/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/program/latex/TexLive/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/program/latex/TexLive/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><d:/program/latex/TexLive/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on ÈúÄÊ±ÇÂàÜÊûê.pdf (20 pages, 1520035 bytes).
+Output written on ÈúÄÊ±ÇÂàÜÊûê.pdf (20 pages, 1518535 bytes).
 PDF statistics:
  761 PDF objects out of 1000 (max. 8388607)
  483 compressed objects within 5 object streams
