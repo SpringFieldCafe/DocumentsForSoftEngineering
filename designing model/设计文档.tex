@@ -7,34 +7,41 @@
 \usepackage{longtable}
 \usepackage{multirow}
 \usepackage{makecell}
+\usepackage{tabularx}
+\usepackage{amssymb}
 \usepackage{setspace}
+\usepackage{tabularx}
+\usepackage{amssymb}  
+\usepackage{float}
 
 \geometry{left=2.5cm, right=2.5cm, top=3cm, bottom=3cm}
 \setlength{\parskip}{0.5em}
 \linespread{1.2}
 
-\title{图书管理系统 详细设计}
+\title{\textbf{\Large 图书管理系统 详细设计}}
 \author{}
 \date{}
 
 \begin{document}
+\newpage
 \maketitle
+\newpage
 \tableofcontents
 \newpage
 
-\section{1 引言}
+\section{引言}
 
-\subsection{1.1 文档目的}
+\subsection{文档目的}
 
 本文档为图书管理系统的详细设计说明书，基于需求分析文档完成全维度设计落地，明确系统的架构分层、模块职责、接口规范、类结构等核心内容，为系统提供标准化、可落地的技术指导，同时确保系统设计符合软件工程行业规范与高内聚、低耦合的设计原则。
 
-\subsection{1.2 适用范围}
+\subsection{适用范围}
 
 本文档适用于图书管理系统的全生命周期，对应系统核心模块包括：认证授权模块、图书管理模块、借阅管理模块、系统管理模块，不包含需求文档明确不支持的借阅期限、逾期处罚、图书预约功能。
 
-\subsection{1.3 名词定义}
+\subsection{名词定义}
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|}
         \hline
@@ -57,15 +64,22 @@
     \end{tabular}
 \end{table}
 
-\section{2 总体架构设计}
+\newpage
+\section{总体架构设计}
 
-\subsection{2.1 分层架构设计}
-
-
-
-\begin{table}[htbp]
+\subsection{分层架构设计}
+系统遵循五层分层架构设计，严格遵循高内聚、低耦合的面向对象设计原则，各层职责边界清晰，单向依赖，架构图如下：
+\vspace{2cm}
+\begin{figure}[H]
     \centering
-    \begin{tabular}{|l|l|l|l|}
+    \includegraphics[width=0.8\textwidth]{ArchitctureDesignMod.png}
+    \caption{图书管理系统架构图}
+\end{figure}
+
+\newpage
+\begin{table}[H]
+    \centering
+    \begin{tabularx}{\linewidth}{|X|X|X|X|}
         \hline
         架构分层 & 层级职责 & 核心组件 & 依赖关系 \\
         \hline
@@ -77,71 +91,74 @@
         \hline
         本地存储层 & 负责系统全量数据的持久化存储与读写，屏蔽底层存储细节 & 图书数据文件、借阅记录文件、用户信息文件、系统日志文件 & 无底层依赖，被服务层单向依赖 \\
         \hline
-    \end{tabular}
+    \end{tabularx}
 \end{table}
 
-\subsection{2.2 核心模块划分}
+\subsection{核心模块划分}
 
 系统划分为4个核心功能模块，完整覆盖需求文档所有业务场景，模块职责如下：
+\begin{enumerate}
+    \item 认证授权模块：负责用户登录、身份校验、会话管理、权限控制，是系统的安全入口，包含用户登录、登出、Token校验等功能。
 
-1. 认证授权模块：负责用户登录、身份校验、会话管理、权限控制，是系统的安全入口
+    \item 图书管理模块：负责图书信息的全生命周期管理，包括图书新增、查询、修改、删除、库存管理等功能。
 
-2. 图书管理模块：负责图书信息的全生命周期管理，包括图书新增、查询、修改、删除、库存管理
+    \item借阅管理模块：负责图书借阅、归还全流程处理，借阅记录的多维度查询与状态管理
 
-3. 借阅管理模块：负责图书借阅、归还全流程处理，借阅记录的多维度查询与状态管理
+    \item 系统管理模块：负责系统数据备份、数据恢复、系统配置管理，保障系统数据安全与稳定运行
+\end{enumerate}
 
-4. 系统管理模块：负责系统数据备份、数据恢复、系统配置管理，保障系统数据安全与稳定运行
-
-\subsection{2.3 角色权限矩阵}
+\newpage
+\subsection{角色权限矩阵}
 
 基于需求文档定义的三类核心用户，明确各角色的操作权限边界，如下：
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
-    \begin{tabular}{|l|l|l|l|l|}
+    \begin{tabularx}{\linewidth}{|X|X|c|c|c|}
         \hline
         功能模块 & 功能点 & 普通用户 & 图书管理员 & 系统维护人员 \\
         \hline
-        认证授权模块 & 系统登录 & ✅ & ✅ & ✅ \\
+        认证授权模块 & 系统登录 & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
         \hline
-        & 登出系统 & ✅ & ✅ & ✅ \\
+        & 登出系统 & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
         \hline
-        图书管理模块 & 图书多条件查询 & ✅ & ✅ & ❌ \\
+        图书管理模块 & 图书多条件查询 & $\checkmark$ & $\checkmark$ & $\times$ \\
         \hline
-        & 新增图书 & ❌ & ✅ & ❌ \\
+        & 新增图书 & $\times$ & $\checkmark$ & $\times$ \\
         \hline
-        & 修改图书信息 & ❌ & ✅ & ❌ \\
+        & 修改图书信息 & $\times$ & $\checkmark$ & $\times$ \\
         \hline
-        & 删除图书 & ❌ & ✅ & ❌ \\
+        & 删除图书 & $\times$ & $\checkmark$ & $\times$ \\
         \hline
-        借阅管理模块 & 图书借阅 & ✅ & ✅ & ❌ \\
+        借阅管理模块 & 图书借阅 & $\checkmark$ & $\checkmark$ & $\times$ \\
         \hline
-        & 图书归还 & ✅ & ✅ & ❌ \\
+        & 图书归还 & $\checkmark$ & $\checkmark$ & $\times$ \\
         \hline
-        & 查看个人借阅记录 & ✅ & ✅ & ❌ \\
+        & 查看个人借阅记录 & $\checkmark$ & $\checkmark$ & $\times$ \\
         \hline
-        & 查看所有借阅记录 & ❌ & ✅ & ❌ \\
+        & 查看所有借阅记录 & $\times$ & $\checkmark$ & $\times$ \\
         \hline
-        & 查看未归还借阅记录 & ❌ & ✅ & ❌ \\
+        & 查看未归还借阅记录 & $\times$ & $\checkmark$ & $\times$ \\
         \hline
-        系统管理模块 & 数据备份 & ❌ & ❌ & ✅ \\
+        系统管理模块 & 数据备份 & $\times$ & $\times$ & $\checkmark$ \\
         \hline
-        & 数据恢复 & ❌ & ❌ & ✅ \\
+        & 数据恢复 & $\times$ & $\times$ & $\checkmark$ \\
         \hline
-        & 系统运行维护 & ❌ & ❌ & ✅ \\
+        & 系统运行维护 & $\times$ & $\times$ & $\checkmark$ \\
         \hline
-    \end{tabular}
+    \end{tabularx}
 \end{table}
 
-\section{3 功能拆分与详细定义}
+\newpage
+\section{功能拆分与详细定义}
 
 基于需求文档与模块划分，拆分为可落地的最小功能点，明确每个功能点的核心目标、前置条件、后置条件，如下：
 
-\subsection{3.1 认证授权模块}
+\subsection{认证授权模块}
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
-    \begin{tabular}{|l|l|l|l|l|}
+    \begin{tabularx}{\linewidth}{|l|l|X|X|X|}
         \hline
         功能点编号 & 功能点名称 & 核心目标 & 前置条件 & 后置条件 \\
         \hline
@@ -155,14 +172,15 @@
         \hline
         Auth-005 & 登出接口 & 清除用户登录状态，销毁Token & 用户已登录，持有有效Token & 缓存中删除用户登录信息，前端清除本地Token，返回登出成功 \\
         \hline
-    \end{tabular}
+    \end{tabularx}
 \end{table}
 
-\subsection{3.2 图书管理模块}
+\newpage
+\subsection{图书管理模块}
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
-    \begin{tabular}{|l|l|l|l|l|}
+    \begin{tabularx}{\linewidth}{|l|l|X|X|X|}
         \hline
         功能点编号 & 功能点名称 & 核心目标 & 前置条件 & 后置条件 \\
         \hline
@@ -174,31 +192,31 @@
         \hline
         Book-004 & 图书删除 & 下架并删除目标图书数据 & 用户已登录，拥有图书管理权限，已定位目标图书 & 校验无未归还借阅记录后，永久删除图书数据，图书列表同步更新 \\
         \hline
-    \end{tabular}
+    \end{tabularx}
 \end{table}
 
-\subsection{3.3 借阅管理模块}
+\subsection{借阅管理模块}
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
-    \begin{tabular}{|l|l|l|l|l|}
+    \begin{tabularx}{\linewidth}{|l|l|X|X|X|}
         \hline
         功能点编号 & 功能点名称 & 核心目标 & 前置条件 & 后置条件 \\
         \hline
-        Borrow-001 & 图书借阅 & 完成图书借阅操作，扣减库存，生成借阅记录 & 用户已登录，目标图书存在且库存>0 & 生成有效借阅记录，状态标记为未归还，对应图书库存扣减1，数据同步更新 \\
+        Borrow-001 & 图书借阅 & 完成图书借阅操作，扣减库存，生成借阅记录 & 用户已登录，目标图书存在且库存>0 & 生成借阅记录，状态标记为未归还，数据更新 \\
         \hline
-        Borrow-002 & 图书归还 & 完成图书归还操作，恢复库存，更新借阅记录状态 & 用户已登录，存在对应未归还的有效借阅记录 & 借阅记录更新归还时间与已归还状态，对应图书库存增加1，数据同步更新 \\
+        Borrow-002 & 图书归还 & 完成图书归还操作，恢复库存，更新借阅记录状态 & 用户已登录，存在对应未归还的有效借阅记录 & 借阅记录更新归还时间与已归还状态，数据更新 \\
         \hline
         Borrow-003 & 借阅记录多维度查询 & 支持按借阅人、借阅状态、时间范围查询借阅记录 & 用户已登录，拥有对应借阅记录查询权限 & 返回匹配的借阅记录列表，关联对应图书信息，无匹配结果返回提示 \\
         \hline
-    \end{tabular}
+    \end{tabularx}
 \end{table}
 
-\subsection{3.4 系统管理模块}
+\subsection{系统管理模块}
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
-    \begin{tabular}{|l|l|l|l|l|}
+    \begin{tabularx}{\linewidth}{|l|l|X|X|X|}
         \hline
         功能点编号 & 功能点名称 & 核心目标 & 前置条件 & 后置条件 \\
         \hline
@@ -206,35 +224,42 @@
         \hline
         System-002 & 数据恢复 & 基于备份文件恢复系统全量数据 & 用户已登录，拥有系统维护权限，备份文件有效 & 校验备份文件合法性后，恢复系统数据，记录恢复日志，返回恢复结果 \\
         \hline
-    \end{tabular}
+    \end{tabularx}
 \end{table}
 
-\section{4 核心用例图}
+\newpage
+\section{核心用例图}
+本核心用例图围绕图书管理系统的普通用户与图书管理员两类角色，完整呈现了图书借阅、归还、信息管理、记录查询等核心业务功能
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{DetailedUseCase.png}
+    \caption{图书管理系统核心用例图}
+\end{figure}
 
-\section{本核心用例图围绕图书管理系统的普通用户与图书管理员两类角色，完整呈现了图书借阅、归还、信息管理、记录查询等核心业务功能}
 
-
-
-
-\section{5 接口详细设计}
+\newpage
+\section{接口详细设计}
 
 接口统一规范：
 
-• 基础请求路径：/api/v1
+\begin{enumerate}
+\item  基础请求路径：/api/v1
 
-• 统一响应格式：{"code": 状态码, "msg": 提示信息, "data": 响应数据}
+\item  统一响应格式：{"code": 状态码, "msg": 提示信息, "data": 响应数据}
 
-• 所有业务接口请求头必须携带Authorization: Bearer {Token}，由拦截器统一校验
+\item  所有业务接口请求头必须携带Authorization: Bearer {Token}，由拦截器统一校验
 
-• 数据格式：JSON，字符编码：UTF-8
+\item  数据格式：JSON，字符编码：UTF-8
+\end{enumerate}
 
-\subsection{5.1 认证授权模块接口}
+\subsection{认证授权模块接口}
 
-\subsubsection{5.1.1 验证码接口}
+\subsubsection{验证码接口}
 
-\paragraph{接口信息}
 
-\begin{table}[htbp]
+
+\begin{table}[H]
+    \paragraph{接口信息}
     \centering
     \begin{tabular}{|l|l|}
         \hline
@@ -253,7 +278,7 @@
     \end{tabular}
 \end{table}
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|l|}
         \hline
@@ -265,40 +290,37 @@
 \end{table}
 
 \paragraph{处理逻辑}
+\begin{enumerate}
+\item 前提：集成Kaptcha验证码工具，引入对应依赖包，完成配置类编写，Redis缓存服务正常运行
 
-1. 前提：集成Kaptcha验证码工具，引入对应依赖包，完成配置类编写，Redis缓存服务正常运行
+\item 调用Kaptcha的createText()方法生成4位数字+字母组合的验证码文本codeText
 
-2. 调用Kaptcha的createText()方法生成4位数字+字母组合的验证码文本codeText
+\item 以入参imageCodeToken为key，codeText为value，存入Redis，设置过期时间300秒
 
-3. 以入参imageCodeToken为key，codeText为value，存入Redis，设置过期时间300秒
+\item 调用Kaptcha的createImage(codeText)方法生成验证码图片
 
-4. 调用Kaptcha的createImage(codeText)方法生成验证码图片
+\item 将图片以流的形式返回给前端
+\end{enumerate}
 
-5. 将图片以流的形式返回给前端
-
+\newpage
 \paragraph{伪代码}
+\begin{verbatim}
+def get_image_code(imageCodeToken: str):
+    # 生成验证码文本
+    code_text = kaptcha.create_text()
+    # 存入Redis，5分钟过期
+    redis_client.setex(imageCodeToken, 300, code_text)
+    # 生成图片
+    image = kaptcha.create_image(code_text)
+    # 返回图片流
+    return Response(image, content_type="image/jpeg")
+\end{verbatim}
 
-\begin{table}[htbp]
-    \centering
-    \begin{tabular}{|l|}
-        \hline
-        Python\\
-        def get\_image\_code(imageCodeToken: str):\\
-        \ \ \ \ code\_text = kaptcha.create\_text()\\
-        \ \ \ \  存入Redis，5分钟过期\\
-        \ \ \ \ redis\_client.setex(imageCodeToken, 300, code\_text)\\
-        \ \ \ \  生成图片\\
-        \ \ \ \ image = kaptcha.create\_image(code\_text)\\
-        \ \ \ \  返回图片流\\
-        \ \ \ \ return Response(image, content\_type="image/jpeg") \\
-        \hline
-    \end{tabular}
-\end{table}
-\subsubsection{5.1.2 登录接口}
-
-\paragraph{接口信息}
-
-\begin{table}[htbp]
+\subsubsection{登录接口}
+\begin{center}
+   接口信息
+\end{center}
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|}
         \hline
@@ -319,7 +341,7 @@
 
 入参列表
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|l|}
         \hline
@@ -336,9 +358,10 @@
     \end{tabular}
 \end{table}
 
+\newpage
 出参列表
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|}
         \hline
@@ -360,93 +383,101 @@
 \end{table}
 
 \paragraph{处理逻辑}
+\begin{enumerate}
+\item 对前端传入的加密密码进行二次加盐加密，生成最终校验密码
 
-1. 对前端传入的加密密码进行二次加盐加密，生成最终校验密码
+\item 验证码校验：根据imageCodeToken从Redis中获取验证码文本
 
-2. 验证码校验：根据imageCodeToken从Redis中获取验证码文本
+\begin{enumerate}
+\item 获取不到：返回错误码10001，提示「验证码已过期」，终止流程
 
-￮ 获取不到：返回错误码10001，提示「验证码已过期」，终止流程
+\item 获取到后与传入的imageCode比对，不匹配：返回错误码10002，提示「验证码错误」，终止流程
+\end{enumerate}
 
-￮ 获取到后与传入的imageCode比对，不匹配：返回错误码10002，提示「验证码错误」，终止流程
+\item 验证码校验通过后，删除Redis中对应的imageCodeToken，防止验证码重复使用
 
-3. 验证码校验通过后，删除Redis中对应的imageCodeToken，防止验证码重复使用
+\item 用户身份校验：根据loginName从数据库查询用户信息
 
-4. 用户身份校验：根据loginName从数据库查询用户信息
+\begin{enumerate}
+\item 查询无结果：记录安全日志，返回错误码10003，提示「用户名不存在或密码错误」，终止流程
 
-￮ 查询无结果：记录安全日志，返回错误码10003，提示「用户名不存在或密码错误」，终止流程
+\item 查询到用户信息，比对二次加密后的密码与数据库存储密码
 
-￮ 查询到用户信息，比对二次加密后的密码与数据库存储密码
+\item 不匹配：记录安全日志，返回错误码10003，提示「用户名不存在或密码错误」，终止流程
 
-▪ 不匹配：记录安全日志，返回错误码10003，提示「用户名不存在或密码错误」，终止流程
+\item 匹配：登录身份校验通过    
+\end{enumerate}
 
-▪ 匹配：登录身份校验通过
+\item 根据用户角色，加载对应的权限资源列表
 
-5. 根据用户角色，加载对应的权限资源列表
+\item 组装用户登录信息LoginUserDto，包含用户ID、用户名、角色、权限、登录时间
 
-6. 组装用户登录信息LoginUserDto，包含用户ID、用户名、角色、权限、登录时间
+\item 生成32位唯一UUID作为登录Token，设置有效期2小时
 
-7. 生成32位唯一UUID作为登录Token，设置有效期2小时
+\item 以Token为key，LoginUserDto为value，存入Redis，设置过期时间7200秒
 
-8. 以Token为key，LoginUserDto为value，存入Redis，设置过期时间7200秒
+\item 组装响应数据，返回登录成功结果
+\end{enumerate}
 
-9. 组装响应数据，返回登录成功结果
-
+\newpage
 \paragraph{伪代码}
+\begin{verbatim}
+def user_login(login_dto: LoginDto):
+    # 密码二次加密
+    encrypt_pwd = password_encrypt(login_dto.password, SALT)
+    # 验证码校验
+    cache_code = redis_client.get(login_dto.imageCodeToken)
+    if not cache_code:
+        return Response(code=10001, msg="验证码已过期")
+    if cache_code.lower() != login_dto.imageCode.lower():
+        return Response(code=10002, msg="验证码错误")
+    # 删除验证码
+    redis_client.delete(login_dto.imageCodeToken)
+    # 用户身份校验
+    user = user_dao.get_by_login_name(login_dto.loginName)
+    if not user or user.password != encrypt_pwd:
+        logger.warning(f"登录失败，用户名{login_dto.loginName}，密码错误")
+        return Response(code=10003, msg="用户名不存在或密码错误")
+    # 加载权限
+    permissions = permission_service.get_by_role(user.role)
+    # 生成Token
+    token = uuid.uuid4().hex
+    # 组装用户信息
+    login_user = LoginUserDto(
+        userId=user.id,
+        loginName=user.loginName,
+        realName=user.realName,
+        role=user.role,
+        permissions=permissions,
+        loginTime=datetime.now()
+    )
+    # 存入Redis
+    redis_client.setex(token, 7200, json.dumps(login_user.dict()))
+    # 返回结果
+    return Response(code=200, msg="登录成功", data={
+        "userId": user.id,
+        "loginName": user.loginName,
+        "realName": user.realName,
+        "role": user.role,
+        "token": token,
+        "permissions": permissions
+    })
+\end{verbatim}
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|p{14cm}|}
         \hline
-        Python\\
-        def user\_login(login\_dto: LoginDto):\\
-            密码二次加密\\
-            encrypt\_pwd = password\_encrypt(login\_dto.password, SALT)\\
-            验证码校验\\
-            cache\_code = redis\_client.get(login\_dto.imageCodeToken)\\
-            if not cache\_code:\\
-                \ \ \ \ return Response(code=10001, msg="验证码已过期")\\
-            if cache\_code.lower() != login\_dto.imageCode.lower():\\
-                return Response(code=10002, msg="验证码错误")\\
-            删除验证码\\
-            redis\_client.delete(login\_dto.imageCodeToken)\\
-            用户身份校验\\
-            user = user\_dao.get\_by\_login\_name(login\_dto.loginName)\\
-            if not user or user.password != encrypt\_pwd:\\
-                \ \ \ \ logger.warning(f"登录失败，用户名\{login\_dto.loginName\}，密码错误")\\
-                return Response(code=10003, msg="用户名不存在或密码错误")\\
-            加载权限\\
-            permissions = permission\_service.get\_by\_role(user.role)\\
-            生成Token\\
-            token = uuid.uuid4().hex\\
-            组装用户信息\\
-            login\_user = LoginUserDto(\\
-                userId=user.id,\\
-                loginName=user.loginName,\\
-                realName=user.realName,\\
-                role=user.role,\\
-                permissions=permissions,\\
-                loginTime=datetime.now()\\
-            )\\
-            存入Redis\\
-            redis\_client.setex(token, 7200, json.dumps(login\_user.dict()))\\
-            返回结果\\
-            return Response(code=200, msg="登录成功", data=\{\\
-                "userId": user.id,\\
-                "loginName": user.loginName,\\
-                "realName": user.realName,\\
-                "role": user.role,\\
-                "token": token,\\
-                "permissions": permissions\\
-            \}) \\
         \hline
     \end{tabular}
 \end{table}
 
-\subsubsection{5.1.3 登出接口}
+\subsubsection{登出接口}
+\begin{center}
+   接口信息
+\end{center}
 
-\paragraph{接口信息}
-
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|}
         \hline
@@ -468,20 +499,23 @@
 \end{table}
 
 \paragraph{处理逻辑}
+\mbox{}\\
+\begin{enumerate}
+    \item 从请求头中获取用户Token，解析并校验Token有效性
+    \item 从Redis中删除该Token对应的用户登录信息
+    \item 返回登出成功结果
+\end{enumerate}
 
-1. 从请求头中获取用户Token，解析并校验Token有效性
 
-2. 从Redis中删除该Token对应的用户登录信息
+\subsection{图书管理模块接口}
 
-3. 返回登出成功结果
+\subsubsection{图书多条件查询接口}
 
-\subsection{5.2 图书管理模块接口}
+\begin{center}
+    接口信息
+\end{center}
 
-\subsubsection{5.2.1 图书多条件查询接口}
-
-\paragraph{接口信息}
-
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|}
         \hline
@@ -504,7 +538,7 @@
 
 入参列表
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|l|}
         \hline
@@ -523,7 +557,7 @@
 
 出参列表
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|}
         \hline
@@ -540,7 +574,7 @@
 
 BookDto结构：
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|}
         \hline
@@ -566,20 +600,22 @@ BookDto结构：
 \end{table}
 
 \paragraph{处理逻辑}
+\begin{enumerate}
+\item 拦截器校验用户Token与图书查询权限，无权限直接拦截
 
-1. 拦截器校验用户Token与图书查询权限，无权限直接拦截
+\item 校验入参合法性，queryType不在指定范围返回参数错误，isbn查询时keyword为空返回参数错误
 
-2. 校验入参合法性，queryType不在指定范围返回参数错误，isbn查询时keyword为空返回参数错误
+\item 根据查询条件构建查询语句，执行分页查询
 
-3. 根据查询条件构建查询语句，执行分页查询
+\item 组装查询结果，返回分页数据
+\end{enumerate}
 
-4. 组装查询结果，返回分页数据
+\subsubsection{图书新增接口}
+\begin{center}
+    接口信息
+\end{center}
 
-\subsubsection{5.2.2 图书新增接口}
-
-\paragraph{接口信息}
-
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|}
         \hline
@@ -602,7 +638,7 @@ BookDto结构：
 
 入参列表
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|l|}
         \hline
@@ -624,22 +660,24 @@ BookDto结构：
 \end{table}
 
 \paragraph{处理逻辑}
+\begin{enumerate}
+\item 拦截器校验用户Token与图书管理权限，无权限直接拦截
 
-1. 拦截器校验用户Token与图书管理权限，无权限直接拦截
+\item 入参合法性校验：必填项非空校验，stock与totalCount≥0校验
 
-2. 入参合法性校验：必填项非空校验，stock与totalCount≥0校验
+\item ISBN唯一性校验：查询数据库是否存在该ISBN的图书，已存在返回错误码20001，提示「ISBN已存在」
 
-3. ISBN唯一性校验：查询数据库是否存在该ISBN的图书，已存在返回错误码20001，提示「ISBN已存在」
+\item 校验通过后，组装图书实体对象，写入数据库
 
-4. 校验通过后，组装图书实体对象，写入数据库
+\item 写入成功返回新增成功，写入失败返回操作失败
+\end{enumerate}
 
-5. 写入成功返回新增成功，写入失败返回操作失败
-
-\subsubsection{5.2.3 图书修改接口}
-
-\paragraph{接口信息}
-
-\begin{table}[htbp]
+\newpage
+\subsubsection{图书修改接口}
+\begin{center}
+    接口信息
+\end{center}
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|}
         \hline
@@ -662,7 +700,7 @@ BookDto结构：
 
 入参列表
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|l|}
         \hline
@@ -686,22 +724,24 @@ BookDto结构：
 \end{table}
 
 \paragraph{处理逻辑}
+\begin{enumerate}
+\item 拦截器校验用户Token与图书管理权限，无权限直接拦截
 
-1. 拦截器校验用户Token与图书管理权限，无权限直接拦截
+\item 入参合法性校验：必填项非空校验，stock与totalCount≥0校验
 
-2. 入参合法性校验：必填项非空校验，stock与totalCount≥0校验
+\item 图书存在性校验：根据ID查询图书，不存在返回错误码20002，提示「图书不存在」
 
-3. 图书存在性校验：根据ID查询图书，不存在返回错误码20002，提示「图书不存在」
+\item 校验通过后，更新数据库中对应图书的信息
 
-4. 校验通过后，更新数据库中对应图书的信息
+\item 更新成功返回修改成功，更新失败返回操作失败
+\end{enumerate}
 
-5. 更新成功返回修改成功，更新失败返回操作失败
-
-\subsubsection{5.2.4 图书删除接口}
-
-\paragraph{接口信息}
-
-\begin{table}[htbp]
+\newpage
+\subsubsection{图书删除接口}
+\begin{center}
+    接口信息
+\end{center}
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|}
         \hline
@@ -724,7 +764,7 @@ BookDto结构：
 
 入参列表
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|l|}
         \hline
@@ -736,24 +776,27 @@ BookDto结构：
 \end{table}
 
 \paragraph{处理逻辑}
+\begin{enumerate}
+\item 拦截器校验用户Token与图书管理权限，无权限直接拦截
 
-1. 拦截器校验用户Token与图书管理权限，无权限直接拦截
+\item 图书存在性校验：根据ID查询图书，不存在返回错误码20002，提示「图书不存在」
 
-2. 图书存在性校验：根据ID查询图书，不存在返回错误码20002，提示「图书不存在」
+\item 借阅记录校验：查询该图书ISBN是否存在未归还的借阅记录，存在返回错误码20003，提示「该图书存在未归还借阅记录，无法删除」
 
-3. 借阅记录校验：查询该图书ISBN是否存在未归还的借阅记录，存在返回错误码20003，提示「该图书存在未归还借阅记录，无法删除」
+\item 校验通过后，执行数据库删除操作，删除该图书数据
 
-4. 校验通过后，执行数据库删除操作，删除该图书数据
+\item 删除成功返回删除成功，删除失败返回操作失败
+\end{enumerate}
 
-5. 删除成功返回删除成功，删除失败返回操作失败
+\newpage
+\subsection{借阅管理模块接口}
 
-\subsection{5.3 借阅管理模块接口}
+\subsubsection{图书借阅接口}
+\begin{center}
+    接口信息
+\end{center}
 
-\subsubsection{5.3.1 图书借阅接口}
-
-\paragraph{接口信息}
-
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|}
         \hline
@@ -776,7 +819,7 @@ BookDto结构：
 
 入参列表
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|l|}
         \hline
@@ -792,28 +835,31 @@ BookDto结构：
 \end{table}
 
 \paragraph{处理逻辑}
+\begin{enumerate}
+\item 拦截器校验用户Token与借阅操作权限，无权限直接拦截
 
-1. 拦截器校验用户Token与借阅操作权限，无权限直接拦截
+\item 入参合法性校验：必填项非空校验
 
-2. 入参合法性校验：必填项非空校验
+\item 图书存在性校验：根据ISBN查询图书，不存在返回错误码30001，提示「图书不存在」
 
-3. 图书存在性校验：根据ISBN查询图书，不存在返回错误码30001，提示「图书不存在」
+\item 库存校验：图书库存≤0，返回错误码30002，提示「图书无可用库存，无法借阅」
 
-4. 库存校验：图书库存≤0，返回错误码30002，提示「图书无可用库存，无法借阅」
-
-5. 开启数据库事务，执行以下操作：
+\item 开启数据库事务，执行以下操作：
 
 ￮ 生成借阅记录实体，状态标记为「未归还」，写入借阅记录表
 
 ￮ 更新图书表，对应图书库存扣减1
 
-6. 事务执行成功，返回借阅成功；事务执行失败，回滚所有操作，返回借阅失败
+\item 事务执行成功，返回借阅成功；事务执行失败，回滚所有操作，返回借阅失败
+\end{enumerate}
+\newpage
+\subsubsection{图书归还接口}
 
-\subsubsection{5.3.2 图书归还接口}
+\begin{center}
+    接口信息
+\end{center}
 
-\paragraph{接口信息}
-
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|}
         \hline
@@ -836,7 +882,7 @@ BookDto结构：
 
 入参列表
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|l|}
         \hline
@@ -850,28 +896,31 @@ BookDto结构：
 \end{table}
 
 \paragraph{处理逻辑}
+\begin{enumerate}
+\item 拦截器校验用户Token与借阅操作权限，无权限直接拦截
 
-1. 拦截器校验用户Token与借阅操作权限，无权限直接拦截
+\item 入参合法性校验：必填项非空校验
 
-2. 入参合法性校验：必填项非空校验
+\item 借阅记录校验：根据ID查询借阅记录，不存在返回错误码30003，提示「借阅记录不存在」；记录状态为「已归还」，返回错误码30004，提示「该图书已归还」
 
-3. 借阅记录校验：根据ID查询借阅记录，不存在返回错误码30003，提示「借阅记录不存在」；记录状态为「已归还」，返回错误码30004，提示「该图书已归还」
+\item 图书存在性校验：根据ISBN查询图书，不存在返回错误码30001，提示「图书不存在」
 
-4. 图书存在性校验：根据ISBN查询图书，不存在返回错误码30001，提示「图书不存在」
-
-5. 开启数据库事务，执行以下操作：
+\item 开启数据库事务，执行以下操作：
 
 ￮ 更新借阅记录，设置归还时间，状态更新为「已归还」
 
 ￮ 更新图书表，对应图书库存增加1
 
-6. 事务执行成功，返回归还成功；事务执行失败，回滚所有操作，返回归还失败
+\item 事务执行成功，返回归还成功；事务执行失败，回滚所有操作，返回归还失败
+\end{enumerate}
+\newpage
+\subsubsection{借阅记录查询接口}
 
-\subsubsection{5.3.3 借阅记录查询接口}
+\begin{center}
+    接口信息
+\end{center}
 
-\paragraph{接口信息}
-
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|}
         \hline
@@ -894,7 +943,7 @@ BookDto结构：
 
 入参列表
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|l|}
         \hline
@@ -913,7 +962,7 @@ BookDto结构：
 
 出参列表
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|}
         \hline
@@ -930,7 +979,7 @@ BookDto结构：
 
 BorrowRecordDto结构：
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|}
         \hline
@@ -954,28 +1003,29 @@ BorrowRecordDto结构：
 \end{table}
 
 \paragraph{处理逻辑}
+\begin{enumerate}
+\item 拦截器校验用户Token与对应查询权限，无权限直接拦截
 
-1. 拦截器校验用户Token与对应查询权限，无权限直接拦截
+\item 入参合法性校验：queryType不在指定范围返回参数错误，borrower查询时borrowerName为空返回参数错误
 
-2. 入参合法性校验：queryType不在指定范围返回参数错误，borrower查询时borrowerName为空返回参数错误
-
-3. 根据用户角色与查询类型，构建查询条件：
+\item 根据用户角色与查询类型，构建查询条件：
 
 ￮ 普通用户personal查询：仅查询当前用户的借阅记录
 
 ￮ unreturned查询：仅筛选状态为未归还的借阅记录
 
-4. 执行分页查询，关联图书表匹配书名信息
+\item 执行分页查询，关联图书表匹配书名信息
 
-5. 组装查询结果，返回分页数据
+\item 组装查询结果，返回分页数据
+\end{enumerate}
 
-\subsection{5.4 系统管理模块接口}
+\subsection{系统管理模块接口}
 
-\subsubsection{5.4.1 数据备份接口}
+\subsubsection{数据备份接口}
 
 \paragraph{接口信息}
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|}
         \hline
@@ -997,22 +1047,25 @@ BorrowRecordDto结构：
 \end{table}
 
 \paragraph{处理逻辑}
+\begin{enumerate}
+\item 拦截器校验用户Token与系统维护权限，无权限直接拦截
 
-1. 拦截器校验用户Token与系统维护权限，无权限直接拦截
+\item 读取数据库全量数据：用户表、图书表、借阅记录表、系统配置表
 
-2. 读取数据库全量数据：用户表、图书表、借阅记录表、系统配置表
+\item 生成JSON格式备份数据，使用AES加密，生成带时间戳的备份文件
 
-3. 生成JSON格式备份数据，使用AES加密，生成带时间戳的备份文件
+\item 记录备份日志，包含备份时间、操作人、备份版本、文件大小
 
-4. 记录备份日志，包含备份时间、操作人、备份版本、文件大小
+\item 返回备份成功结果与备份文件下载地址
+\end{enumerate}
 
-5. 返回备份成功结果与备份文件下载地址
+\subsubsection{数据恢复接口}
 
-\subsubsection{5.4.2 数据恢复接口}
+\begin{center}
+    接口信息
+\end{center}
 
-\paragraph{接口信息}
-
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|}
         \hline
@@ -1035,7 +1088,7 @@ BorrowRecordDto结构：
 
 入参列表
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|l|}
         \hline
@@ -1047,350 +1100,347 @@ BorrowRecordDto结构：
 \end{table}
 
 \paragraph{处理逻辑}
+\begin{enumerate}
+\item 拦截器校验用户Token与系统维护权限，无权限直接拦截
 
-1. 拦截器校验用户Token与系统维护权限，无权限直接拦截
+\item 校验备份文件合法性：文件格式校验、解密校验、数据完整性校验
 
-2. 校验备份文件合法性：文件格式校验、解密校验、数据完整性校验
+\item 校验不通过，返回错误码40001，提示「备份文件非法，无法恢复」
 
-3. 校验不通过，返回错误码40001，提示「备份文件非法，无法恢复」
+\item 校验通过后，先备份当前数据库数据，再执行数据恢复操作，全量覆盖数据库表数据
 
-4. 校验通过后，先备份当前数据库数据，再执行数据恢复操作，全量覆盖数据库表数据
+\item 恢复成功，记录恢复日志，返回恢复成功；恢复失败，回滚到恢复前的数据，返回恢复失败
+\end{enumerate}
 
-5. 恢复成功，记录恢复日志，返回恢复成功；恢复失败，回滚到恢复前的数据，返回恢复失败
-
-\section{6 类详细设计}
-
+\newpage
+\section{类详细设计}
 基于Python语言特性与面向对象设计原则，完成系统核心类的详细设计，明确类的属性、方法、参数类型与职责边界。类总概述图如下：
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{DetailedClass.png}
+    \caption{系统核心类总概述图}
+    \label{fig:class_diagram}
+\end{figure}
 
 
 
-\subsection{6.1 实体类（Entities）}
+\subsection{实体类}
 
 实体类为系统核心数据载体，位于实体层，无业务逻辑，仅封装属性与基础行为，被所有上层依赖。
 
-\subsubsection{6.1.1 图书类（Book）}
+\subsubsection{图书类}
+\begin{verbatim}
+from datetime import datetime
+from typing import Optional
 
-\begin{table}[htbp]
-    \centering
-    \begin{tabular}{|l|}
-        \hline
-        Python\\
-        from datetime import datetime\\
-        from typing import Optional\\
-        \\
-        class Book:\\\n            """图书实体类，封装图书核心属性与基础行为"""\\
-            def __init__(\\
-                self,\\
-                id: str,\\
-                isbn: str,\\
-                book_name: str,\\
-                author: str,\\
-                publisher: Optional[str] = None,\\
-                stock: int = 0,\\
-                total_count: int = 0,\\
-                create_time: Optional[datetime] = None,\\
-                update_time: Optional[datetime] = None\\
-            ):\\
-                self.id = id  图书唯一ID，主键\
-                self.isbn = isbn  图书ISBN，唯一业务标识\
-                self.book_name = book_name  书名\
-                self.author = author  作者\
-                self.publisher = publisher  出版社\
-                self.stock = stock  可用库存\
-                self.total_count = total_count  总馆藏数量\
-                self.create_time = create_time or datetime.now()  入库时间\
-                self.update_time = update_time or datetime.now()  更新时间\\
-            \\
-            def is_available(self) -> bool:\\\n                """判断图书是否可借阅"""\\
-                return self.stock > 0\\
-            \\
-            def decrease_stock(self) -> bool:\\\n                """扣减库存，借阅时调用"""\\
-                if self.stock <= 0:\\\n                    return False\\
-                self.stock -= 1\\
-                self.update_time = datetime.now()\\
-                return True\\
-            \\
-            def increase_stock(self) -> None:\\\n                """增加库存，归还时调用"""\\
-                self.stock += 1\\
-                self.update_time = datetime.now() \\
-        \hline
-    \end{tabular}
-\end{table}
+class Book:
+    """图书实体类，封装图书核心属性与基础行为"""
+    def __init__(
+        self,
+        id: str,
+        isbn: str,
+        book_name: str,
+        author: str,
+        publisher: Optional[str] = None,
+        stock: int = 0,
+        total_count: int = 0,
+        create_time: Optional[datetime] = None,
+        update_time: Optional[datetime] = None
+    ):
+        self.id = id  # 图书唯一ID，主键
+        self.isbn = isbn  # 图书ISBN，唯一业务标识
+        self.book_name = book_name  # 书名
+        self.author = author  # 作者
+        self.publisher = publisher  # 出版社
+        self.stock = stock  # 可用库存
+        self.total_count = total_count  # 总馆藏数量
+        self.create_time = create_time or datetime.now()  # 入库时间
+        self.update_time = update_time or datetime.now()  # 更新时间
 
-\subsubsection{6.1.2 借阅记录类（BorrowRecord）}
+    def is_available(self) -> bool:
+        """判断图书是否可借阅"""
+        return self.stock > 0
 
-\begin{table}[htbp]
-    \centering
-    \begin{tabular}{|l|}
-        \hline
-        Python\\
-        from datetime import datetime\\
-        from typing import Optional\\
-        \\
-        class BorrowRecord:\\\n            """借阅记录实体类，封装借阅记录核心属性与基础行为"""\\
-            def __init__(\\
-                self,\\
-                id: str,\\
-                isbn: str,\\
-                book_name: str,\\
-                borrower_name: str,\\
-                borrower_phone: Optional[str] = None,\\
-                borrow_time: Optional[datetime] = None,\\
-                return_time: Optional[datetime] = None,\\
-                status: str = "未归还"\\
-            ):\\
-                self.id = id  借阅记录唯一ID，主键\
-                self.isbn = isbn  图书ISBN\
-                self.book_name = book_name  书名\
-                self.borrower_name = borrower_name  借阅人姓名\
-                self.borrower_phone = borrower_phone  借阅人联系电话\
-                self.borrow_time = borrow_time or datetime.now()  借阅时间\
-                self.return_time = return_time  归还时间\
-                self.status = status  借阅状态：未归还/已归还\\
-            \\
-            def is_unreturned(self) -> bool:\\\n                """判断是否为未归还状态"""\\
-                return self.status == "未归还"\\
-            \\
-            def complete_return(self) -> None:\\\n                """完成归还操作，更新状态与归还时间"""\\
-                self.status = "已归还"\\
-                self.return_time = datetime.now() \\
-        \hline
-    \end{tabular}
-\end{table}
+    def decrease_stock(self) -> bool:
+        """扣减库存，借阅时调用"""
+        if self.stock <= 0:
+            return False
+        self.stock -= 1
+        self.update_time = datetime.now()
+        return True
 
-\subsubsection{6.1.3 用户类（User）}
+    def increase_stock(self) -> None:
+        """增加库存，归还时调用"""
+        self.stock += 1
+        self.update_time = datetime.now()
+\end{verbatim}
+\subsubsection{借阅记录类}
 
-\begin{table}[htbp]
-    \centering
-    \begin{tabular}{|l|}
-        \hline
-        Python\\
-        from datetime import datetime\\
-        from typing import Optional\\
-        \\
-        class User:\\\n            """用户实体类，封装系统用户核心属性"""\\
-            def __init__(\\
-                self,\\
-                id: str,\\
-                login_name: str,\\
-                password: str,\\
-                real_name: str,\\
-                role: str,\\
-                create_time: Optional[datetime] = None,\\
-                update_time: Optional[datetime] = None\\
-            ):\\
-                self.id = id  用户唯一ID，主键\
-                self.login_name = login_name  登录用户名，唯一\
-                self.password = password  加密后的密码\
-                self.real_name = real_name  用户真实姓名\
-                self.role = role  用户角色：普通用户/图书管理员/系统维护人员\
-                self.create_time = create_time or datetime.now()  创建时间\
-                self.update_time = update_time or datetime.now()  更新时间\\
-            \\
-            def has_book_manage_permission(self) -> bool:\\\n                """判断是否拥有图书管理权限"""\\
-                return self.role == "图书管理员"\\
-            \\
-            def has_system_manage_permission(self) -> bool:\\\n                """判断是否拥有系统管理权限"""\\
-                return self.role == "系统维护人员" \\
-        \hline
-    \end{tabular}
-\end{table}
+\begin{verbatim}
+from datetime import datetime
+from typing import Optional
 
-\subsection{6.2 数据访问类（DAO）}
+class BorrowRecord:
+    """借阅记录实体类，封装借阅记录核心属性与基础行为"""
+    def __init__(
+        self,
+        id: str,
+        isbn: str,
+        book_name: str,
+        borrower_name: str,
+        borrower_phone: Optional[str] = None,
+        borrow_time: Optional[datetime] = None,
+        return_time: Optional[datetime] = None,
+        status: str = "未归还"
+    ):
+        self.id = id  # 借阅记录唯一ID，主键
+        self.isbn = isbn  # 图书ISBN
+        self.book_name = book_name  # 书名
+        self.borrower_name = borrower_name  # 借阅人姓名
+        self.borrower_phone = borrower_phone  # 借阅人联系电话
+        self.borrow_time = borrow_time or datetime.now()  # 借阅时间
+        self.return_time = return_time  # 归还时间
+        self.status = status  # 借阅状态：未归还/已归还
+
+    def is_unreturned(self) -> bool:
+        """判断是否为未归还状态"""
+        return self.status == "未归还"
+
+    def complete_return(self) -> None:
+        """完成归还操作，更新状态与归还时间"""
+        self.status = "已归还"
+        self.return_time = datetime.now()
+\end{verbatim}
+
+\subsubsection{用户类}
+\begin{verbatim}
+from datetime import datetime
+from typing import Optional
+
+class User:
+    """用户实体类，封装系统用户核心属性"""
+    def __init__(
+        self,
+        id: str,
+        login_name: str,
+        password: str,
+        real_name: str,
+        role: str,
+        create_time: Optional[datetime] = None,
+        update_time: Optional[datetime] = None
+    ):
+        self.id = id  # 用户唯一ID，主键
+        self.login_name = login_name  # 登录用户名，唯一
+        self.password = password  # 加密后的密码
+        self.real_name = real_name  # 用户真实姓名
+        self.role = role  # 用户角色：普通用户/图书管理员/系统维护人员
+        self.create_time = create_time or datetime.now()  # 创建时间
+        self.update_time = update_time or datetime.now()  # 更新时间
+
+    def has_book_manage_permission(self) -> bool:
+        """判断是否拥有图书管理权限"""
+        return self.role == "图书管理员"
+
+    def has_system_manage_permission(self) -> bool:
+        """判断是否拥有系统管理权限"""
+        return self.role == "系统维护人员"
+\end{verbatim}
+
+\subsection{数据访问类}
 
 数据访问类位于数据访问层，封装本地存储/数据库的读写操作，屏蔽存储细节，为业务层提供统一的数据访问接口。
 
-\subsubsection{6.2.1 基础DAO类（BaseDAO）}
+\subsubsection{基础DAO类}
+\begin{verbatim}
+from typing import List, Optional, TypeVar, Generic
+import sqlite3
 
-\begin{table}[htbp]
-    \centering
-    \begin{tabular}{|l|}
-        \hline
-        Python\\
-        from typing import List, Optional, TypeVar, Generic\\
-        import sqlite3\\
-        \\
-        T = TypeVar('T')\\
-        \\
-        class BaseDAO(Generic[T]):\\
-            """基础DAO类，封装通用的CRUD操作，所有DAO类继承此类"""\\
-            def __init__(self, db_path: str = "library.db"):\\\n                self.db_path = db_path\\
-            \\
-            def _get_connection(self) -> sqlite3.Connection:\\\n                """获取数据库连接"""\\
-                return sqlite3.connect(self.db_path)\\
-            \\
-            def insert(self, entity: T) -> bool:\\\n                """新增数据"""\\
-                raise NotImplementedError("子类需实现insert方法")\\
-            \\
-            def update(self, entity: T) -> bool:\\\n                """更新数据"""\\
-                raise NotImplementedError("子类需实现update方法")\\
-            \\
-            def delete_by_id(self, id: str) -> bool:\\\n                """根据ID删除数据"""\\
-                raise NotImplementedError("子类需实现delete_by_id方法")\\
-            \\
-            def select_by_id(self, id: str) -> Optional[T]:\\
-                """根据ID查询数据"""\\
-                raise NotImplementedError("子类需实现select_by_id方法")\\
-            \\
-            def select_all(self) -> List[T]:\\
-                """查询全量数据"""\\
-                raise NotImplementedError("子类需实现select_all方法") \\
-        \hline
-    \end{tabular}
-\end{table}
+T = TypeVar('T')
 
-\subsubsection{6.2.2 图书DAO类（BookDAO）}
+class BaseDAO(Generic[T]):
+    """基础DAO类，封装通用的CRUD操作，所有DAO类继承此类"""
+    def __init__(self, db_path: str = "library.db"):
+        self.db_path = db_path
+
+    def _get_connection(self) -> sqlite3.Connection:
+        """获取数据库连接"""
+        return sqlite3.connect(self.db_path)
+
+    def insert(self, entity: T) -> bool:
+        """新增数据"""
+        raise NotImplementedError("子类需实现insert方法")
+
+    def update(self, entity: T) -> bool:
+        """更新数据"""
+        raise NotImplementedError("子类需实现update方法")
+
+    def delete_by_id(self, id: str) -> bool:
+        """根据ID删除数据"""
+        raise NotImplementedError("子类需实现delete_by_id方法")
+
+    def select_by_id(self, id: str) -> Optional[T]:
+        """根据ID查询数据"""
+        raise NotImplementedError("子类需实现select_by_id方法")
+
+    def select_all(self) -> List[T]:
+        """查询全量数据"""
+        raise NotImplementedError("子类需实现select_all方法")
+\end{verbatim}
+
+\subsubsection{图书DAO类}
 
 继承BaseDAO类，封装图书表的专属读写操作，包括按ISBN查询、多条件分页查询、库存更新等。
 
-\subsubsection{6.2.3 借阅记录DAO类（BorrowRecordDAO）}
+\subsubsection{借阅记录DAO类}
 
 继承BaseDAO类，封装借阅记录表的专属读写操作，包括按ISBN查询未归还记录、按借阅人查询、按状态分页查询等。
 
-\subsubsection{6.2.4 用户DAO类（UserDAO）}
+\subsubsection{用户DAO类}
 
 继承BaseDAO类，封装用户表的专属读写操作，包括按登录名查询用户、按角色查询用户等。
 
-\subsection{6.3 规则校验类（SystemRules）}
+\subsection{规则校验类}
 
 规则校验类位于规则校验层，封装系统通用业务规则与校验逻辑，实现规则复用，避免业务逻辑中重复编写校验代码。
 
-\subsubsection{6.3.1 库存规则类（StockRule）}
+\subsubsection{库存规则类}
 
-\begin{table}[htbp]
-    \centering
-    \begin{tabular}{|l|}
-        \hline
-        Python\\
-        from entities.Book import Book\\
-        \\
-        class StockRule:\\\n            """库存规则校验类，封装图书库存相关的所有校验规则"""\\
-            \\
-            @staticmethod\\
-            def validate_borrow_stock(book: Book) -> tuple[bool, str]:\\
-                """\\
-                校验图书是否满足借阅库存条件\\
-                :param book: 图书实体\\
-                :return: (校验结果, 提示信息)\\
-                """\\
-                if not book:\\\n                    return False, "图书不存在"\\
-                if not book.is_available():\\
-                    return False, "图书无可用库存，无法借阅"\\
-                if book.stock < 0:\\\n                    return False, "图书库存异常，请联系管理员"\\
-                return True, "校验通过"\\
-            \\
-            @staticmethod\\
-            def validate_stock_number(stock: int, total_count: int) -> tuple[bool, str]:\\
-                """\\
-                校验库存数量合法性\\
-                :param stock: 可用库存\\
-                :param total_count: 总馆藏数量\\
-                :return: (校验结果, 提示信息)\\
-                """\\
-                if stock < 0:\\\n                    return False, "可用库存不能为负数"\\
-                if total_count < 0:\\\n                    return False, "总馆藏数量不能为负数"\\
-                if stock > total_count:\\\n                    return False, "可用库存不能大于总馆藏数量"\\
-                return True, "校验通过" \\
-        \hline
-    \end{tabular}
-\end{table}
+\begin{verbatim}
+from entities.Book import Book
 
-\subsubsection{6.3.2 借阅规则类（BorrowRule）}
+class StockRule:
+    """库存规则校验类，封装图书库存相关的所有校验规则"""
 
-\begin{table}[htbp]
-    \centering
-    \begin{tabular}{|l|}
-        \hline
-        Python\\
-        from entities.BorrowRecord import BorrowRecord\\
-        \\
-        class BorrowRule:\\\n            """借阅规则校验类，封装借阅/归还相关的所有校验规则"""\\
-            \\
-            @staticmethod\\
-            def validate_return_record(record: BorrowRecord) -> tuple[bool, str]:\\
-                """\\
-                校验归还操作的借阅记录合法性\\
-                :param record: 借阅记录实体\\
-                :return: (校验结果, 提示信息)\\
-                """\\
-                if not record:\\\n                    return False, "借阅记录不存在"\\
-                if not record.is_unreturned():\\
-                    return False, "该图书已完成归还，无需重复操作"\\
-                return True, "校验通过"\\
-            \\
-            @staticmethod\\
-            def validate_delete_book_has_unreturned(records: list[BorrowRecord]) -> tuple[bool, str]:\\
-                """\\
-                校验图书删除时是否存在未归还借阅记录\\
-                :param records: 该图书的借阅记录列表\\
-                :return: (校验结果, 提示信息)\\
-                """\\
-                for record in records:\\\n                    if record.is_unreturned():\\
-                        return False, "该图书存在未归还的借阅记录，无法删除"\\
-                return True, "校验通过" \\
-        \hline
-    \end{tabular}
-\end{table}
+    @staticmethod
+    def validate_borrow_stock(book: Book) -> tuple[bool, str]:
+        """
+        校验图书是否满足借阅库存条件
+        :param book: 图书实体
+        :return: (校验结果, 提示信息)
+        """
+        if not book:
+            return False, "图书不存在"
+        if not book.is_available():
+            return False, "图书无可用库存，无法借阅"
+        if book.stock < 0:
+            return False, "图书库存异常，请联系管理员"
+        return True, "校验通过"
 
-\subsection{6.4 业务管理类（Managers）}
+    @staticmethod
+    def validate_stock_number(stock: int, total_count: int) -> tuple[bool, str]:
+        """
+        校验库存数量合法性
+        :param stock: 可用库存
+        :param total_count: 总馆藏数量
+        :return: (校验结果, 提示信息)
+        """
+        if stock < 0:
+            return False, "可用库存不能为负数"
+        if total_count < 0:
+            return False, "总馆藏数量不能为负数"
+        if stock > total_count:
+            return False, "可用库存不能大于总馆藏数量"
+        return True, "校验通过"
+\end{verbatim}
+
+\subsubsection{借阅规则类}
+
+\begin{verbatim}
+from entities.BorrowRecord import BorrowRecord
+
+class BorrowRule:
+    """借阅规则校验类，封装借阅/归还相关的所有校验规则"""
+
+    @staticmethod
+    def validate_return_record(record: BorrowRecord) -> tuple[bool, str]:
+        """
+        校验归还操作的借阅记录合法性
+        :param record: 借阅记录实体
+        :return: (校验结果, 提示信息)
+        """
+        if not record:
+            return False, "借阅记录不存在"
+        if not record.is_unreturned():
+            return False, "该图书已完成归还，无需重复操作"
+        return True, "校验通过"
+
+    @staticmethod
+    def validate_delete_book_has_unreturned(records: list[BorrowRecord]) -> tuple[bool, str]:
+        """
+        校验图书删除时是否存在未归还借阅记录
+        :param records: 该图书的借阅记录列表
+        :return: (校验结果, 提示信息)
+        """
+        for record in records:
+            if record.is_unreturned():
+                return False, "该图书存在未归还的借阅记录，无法删除"
+        return True, "校验通过"
+\end{verbatim}
+
+\subsection{业务管理类}
 
 业务管理类位于业务逻辑层，是核心业务规则的执行单元，封装对应模块的全量业务逻辑，编排业务流程，处理业务异常。
 
-\subsubsection{6.4.1 图书管理器（BookManager）}
+\subsubsection{图书管理器}
 
 依赖BookDAO、StockRule、BorrowRule，封装图书管理全量业务逻辑，包括图书新增、查询、修改、删除的核心业务流程处理。
 
-\subsubsection{6.4.2 借阅管理器（BorrowManager）}
+\subsubsection{借阅管理器}
 
 依赖BorrowRecordDAO、BookDAO、BorrowRule、StockRule，封装借阅管理全量业务逻辑，包括图书借阅、归还、借阅记录查询的核心业务流程处理，事务控制。
 
-\subsubsection{6.4.3 用户管理器（UserManager）}
+\subsubsection{用户管理器}
 
 依赖UserDAO，封装用户身份校验、权限加载、用户信息管理的核心业务逻辑。
 
-\subsubsection{6.4.4 系统管理器（SystemManager）}
+\subsubsection{系统管理器}
 
 依赖所有DAO类，封装系统数据备份、数据恢复、系统配置管理的核心业务逻辑。
 
-\subsection{6.5 工具类（Utils）}
+\subsection{工具类}
 
 工具类封装系统通用工具方法，实现代码复用，所有方法为静态方法，无状态，可全局调用。
 
-1. 加密工具类（EncryptUtil）：封装密码加密、AES加解密、MD5摘要等方法
+\begin{enumerate}
+\item  加密工具类（EncryptUtil）：封装密码加密、AES加解密、MD5摘要等方法
 
-2. 验证码工具类（CaptchaUtil）：封装验证码生成、图片生成方法
+\item  验证码工具类（CaptchaUtil）：封装验证码生成、图片生成方法
 
-3. JWT工具类（JwtUtil）：封装Token生成、校验、解析方法
+\item  JWT工具类（JwtUtil）：封装Token生成、校验、解析方法
 
-4. 日期工具类（DateUtil）：封装日期格式化、时间差计算等方法
+\item  日期工具类（DateUtil）：封装日期格式化、时间差计算等方法
 
-5. 分页工具类（PageUtil）：封装分页参数处理、分页结果组装方法
+\item  分页工具类（PageUtil）：封装分页参数处理、分页结果组装方法
+\end{enumerate}
 
-\section{7 页面详细设计}
+\section{页面详细设计}
 
-\subsection{7.1 通用页面规范}
+\subsection{通用页面规范}
 
-1. 页面布局：顶部导航栏+左侧菜单栏+主内容区的三段式布局，适配1920*1080及以上主流分辨率
+\begin{enumerate}
+\item  页面布局：顶部导航栏+左侧菜单栏+主内容区的三段式布局，适配1920*1080及以上主流分辨率
 
-2. 导航栏固定展示：系统名称、当前登录用户、角色、登出按钮
+\item  导航栏固定展示：系统名称、当前登录用户、角色、登出按钮
 
-3. 菜单栏根据用户角色动态展示有权限的菜单，无权限的菜单隐藏
+\item  菜单栏根据用户角色动态展示有权限的菜单，无权限的菜单隐藏
 
-4. 所有表单提交前必须执行前端非空校验与格式校验，提交按钮点击后置灰，防止重复提交
+\item  所有表单提交前必须执行前端非空校验与格式校验，提交按钮点击后置灰，防止重复提交
 
-5. 所有操作结果必须给出明确的成功/失败提示，异常场景给出可理解的错误信息
+\item  所有操作结果必须给出明确的成功/失败提示，异常场景给出可理解的错误信息
+\end{enumerate}
 
-\subsection{7.2 登录页面}
+\subsection{登录页面}
 
-\subsubsection{7.2.1 页面入口}
+\subsubsection{页面入口}
 
 系统根路径/，未登录用户访问任何页面均重定向至登录页
 
-\subsubsection{7.2.2 页面元素}
+\subsubsection{页面元素}
 
-1. 页面主体：系统logo、系统名称「图书管理系统」
+\begin{enumerate}
+\item  页面主体：系统logo、系统名称「图书管理系统」
 
-2. 表单区域：
+\item  表单区域：
 
 ￮ 用户名输入框：placeholder「请输入用户名」
 
@@ -1400,25 +1450,30 @@ BorrowRecordDto结构：
 
 ￮ 登录按钮：主按钮，点击提交登录请求
 
-3. 底部版权信息
+\item  底部版权信息
+\end{enumerate}
 
-\subsubsection{7.2.3 表单校验规则}
+\subsubsection{表单校验规则}
 
-1. 用户名：非空校验，长度3-20位
+\begin{enumerate}
+\item  用户名：非空校验，长度3-20位
 
-2. 密码：非空校验，长度6-20位
+\item  密码：非空校验，长度6-20位
 
-3. 验证码：非空校验，长度4位
+\item  验证码：非空校验，长度4位
 
-4. 任一校验不通过，登录按钮置灰，对应输入框下方给出红色提示文字
+\item  任一校验不通过，登录按钮置灰，对应输入框下方给出红色提示文字
+\end{enumerate}
 
-\subsubsection{7.2.4 处理逻辑与后端交互}
+\subsubsection{处理逻辑与后端交互}
 
-1. 页面初始化完成后，前端生成32位随机imageCodeToken，调用验证码接口，渲染验证码图片
+\begin{enumerate}
+\item  页面初始化完成后，前端生成32位随机imageCodeToken，调用验证码接口，渲染验证码图片
 
-2. 验证码图片点击事件：重新生成imageCodeToken，调用验证码接口，刷新图片
+\item  验证码图片点击事件：重新生成imageCodeToken，调用验证码接口，刷新图片
 
-3. 登录按钮点击事件：
+\item  登录按钮点击事件：
+\end{enumerate}
 
 ￮ 执行前端表单校验，校验不通过终止流程
 
@@ -1430,19 +1485,20 @@ BorrowRecordDto结构：
 
 ▪ 登录失败：弹出错误提示，刷新验证码图片，清空验证码输入框，登录按钮恢复可点击状态
 
-\subsection{7.3 首页}
+\subsection{首页}
 
-\subsubsection{7.3.1 页面入口}
+\subsubsection{页面入口}
 
 登录成功后默认跳转至/home，导航栏「首页」菜单
 
-\subsubsection{7.3.2 页面元素与逻辑}
+\subsubsection{页面元素与逻辑}
 
-1. 系统欢迎语：展示当前登录用户姓名、角色
+\begin{enumerate}
+\item  系统欢迎语：展示当前登录用户姓名、角色
 
-2. 系统功能介绍卡片：根据用户角色展示对应可操作的功能模块介绍与快捷入口
+\item  系统功能介绍卡片：根据用户角色展示对应可操作的功能模块介绍与快捷入口
 
-3. 数据概览区域：
+\item  数据概览区域：
 
 ￮ 普通用户：展示个人借阅总数、未归还数量、可借阅图书总数
 
@@ -1450,17 +1506,19 @@ BorrowRecordDto结构：
 
 ￮ 系统维护人员：展示系统运行时长、数据备份次数、总用户数、总图书数
 
-4. 快捷操作按钮：根据角色展示高频操作入口，如图书查询、借阅操作、新增图书等
+\item  快捷操作按钮：根据角色展示高频操作入口，如图书查询、借阅操作、新增图书等
+\end{enumerate}
 
-\subsection{7.4 图书管理页面}
+\subsection{图书管理页面}
 
-\subsubsection{7.4.1 页面入口}
+\subsubsection{页面入口}
 
 左侧菜单栏「图书管理」，仅图书管理员可访问，普通用户仅可访问图书查询子页面
 
-\subsubsection{7.4.2 页面元素}
+\subsubsection{页面元素}
 
-1. 查询区域：
+\begin{enumerate}
+\item  查询区域：
 
 ￮ 查询类型下拉框：书名/作者/ISBN
 
@@ -1468,43 +1526,47 @@ BorrowRecordDto结构：
 
 ￮ 查询按钮、重置按钮
 
-2. 操作区域：图书管理员展示「新增图书」按钮
+\item  操作区域：图书管理员展示「新增图书」按钮
 
-3. 图书列表表格：
+\item  图书列表表格：
 
 ￮ 列：ISBN、书名、作者、出版社、可用库存、总馆藏、入库时间、操作
 
 ￮ 操作列：图书管理员展示「修改」「删除」按钮，普通用户仅展示「查看详情」按钮
 
-4. 分页组件：展示总条数、页码切换、每页条数调整
+\item  分页组件：展示总条数、页码切换、每页条数调整
 
-5. 新增/编辑弹窗：包含图书所有信息的表单，含表单校验
+\item  新增/编辑弹窗：包含图书所有信息的表单，含表单校验
 
-6. 删除确认弹窗：二次确认删除操作，提示风险
+\item  删除确认弹窗：二次确认删除操作，提示风险
+\end{enumerate}
 
-\subsubsection{7.4.3 处理逻辑与后端交互}
+\subsubsection{处理逻辑与后端交互}
 
-1. 页面初始化：调用图书查询接口，加载第一页图书列表
+\begin{enumerate}
+\item  页面初始化：调用图书查询接口，加载第一页图书列表
 
-2. 查询按钮点击事件：组装查询参数，调用图书查询接口，刷新列表
+\item  查询按钮点击事件：组装查询参数，调用图书查询接口，刷新列表
 
-3. 新增按钮点击事件：打开新增弹窗，清空表单，用户填写后提交，调用图书新增接口，成功后关闭弹窗，刷新列表
+\item  新增按钮点击事件：打开新增弹窗，清空表单，用户填写后提交，调用图书新增接口，成功后关闭弹窗，刷新列表
 
-4. 修改按钮点击事件：打开编辑弹窗，回显当前图书信息，用户修改后提交，调用图书修改接口，成功后关闭弹窗，刷新列表
+\item  修改按钮点击事件：打开编辑弹窗，回显当前图书信息，用户修改后提交，调用图书修改接口，成功后关闭弹窗，刷新列表
 
-5. 删除按钮点击事件：弹出二次确认弹窗，确认后调用图书删除接口，成功后刷新列表，失败弹出错误提示
+\item  删除按钮点击事件：弹出二次确认弹窗，确认后调用图书删除接口，成功后刷新列表，失败弹出错误提示
+\end{enumerate}
 
-\subsection{7.5 借阅管理页面}
+\subsection{借阅管理页面}
 
-\subsubsection{7.5.1 页面入口}
+\subsubsection{页面入口}
 
 左侧菜单栏「借阅管理」，所有登录用户可访问，根据角色展示不同功能
 
-\subsubsection{7.5.2 页面元素}
+\subsubsection{页面元素}
 
-1. 操作区域：「图书借阅」「图书归还」按钮
+\begin{enumerate}
+\item  操作区域：「图书借阅」「图书归还」按钮
 
-2. 查询区域：
+\item  查询区域：
 
 ￮ 查询类型下拉框：全部/个人借阅/未归还/按借阅人查询
 
@@ -1512,69 +1574,77 @@ BorrowRecordDto结构：
 
 ￮ 查询按钮、重置按钮
 
-3. 借阅记录列表表格：
+\item  借阅记录列表表格：
 
 ￮ 列：记录ID、ISBN、书名、借阅人、借阅时间、归还时间、状态、操作
 
 ￮ 操作列：未归还状态展示「归还」按钮
 
-4. 分页组件
+\item  分页组件
 
-5. 借阅操作弹窗：ISBN、借阅人信息表单
+\item  借阅操作弹窗：ISBN、借阅人信息表单
 
-6. 归还操作弹窗：借阅记录ID、ISBN确认表单
+\item  归还操作弹窗：借阅记录ID、ISBN确认表单
+\end{enumerate}
 
-\subsubsection{7.5.3 处理逻辑与后端交互}
+\subsubsection{处理逻辑与后端交互}
 
-1. 页面初始化：根据用户角色调用借阅记录查询接口，加载对应列表
+\begin{enumerate}
+\item  页面初始化：根据用户角色调用借阅记录查询接口，加载对应列表
 
-2. 借阅按钮点击事件：打开借阅弹窗，用户填写信息提交，调用图书借阅接口，成功后关闭弹窗，刷新列表与图书库存
+\item  借阅按钮点击事件：打开借阅弹窗，用户填写信息提交，调用图书借阅接口，成功后关闭弹窗，刷新列表与图书库存
 
-3. 归还按钮点击事件：打开归还弹窗，回显借阅记录信息，用户确认后提交，调用图书归还接口，成功后关闭弹窗，刷新列表与图书库存
+\item  归还按钮点击事件：打开归还弹窗，回显借阅记录信息，用户确认后提交，调用图书归还接口，成功后关闭弹窗，刷新列表与图书库存
 
-4. 查询按钮点击事件：组装查询参数，调用借阅记录查询接口，刷新列表
+\item  查询按钮点击事件：组装查询参数，调用借阅记录查询接口，刷新列表
+\end{enumerate}
 
-\subsection{7.6 系统管理页面}
+\subsection{系统管理页面}
 
-\subsubsection{7.6.1 页面入口}
+\subsubsection{页面入口}
 
 左侧菜单栏「系统管理」，仅系统维护人员可访问
 
-\subsubsection{7.6.2 页面元素}
+\subsubsection{页面元素}
 
-1. 数据备份区域：「手动备份」按钮、备份记录列表、备份文件下载按钮
+\begin{enumerate}
+\item  数据备份区域：「手动备份」按钮、备份记录列表、备份文件下载按钮
 
-2. 数据恢复区域：备份文件上传组件、「开始恢复」按钮、恢复风险提示
+\item  数据恢复区域：备份文件上传组件、「开始恢复」按钮、恢复风险提示
 
-3. 系统运行信息区域：展示系统版本、数据库大小、运行时长、备份记录统计
+\item  系统运行信息区域：展示系统版本、数据库大小、运行时长、备份记录统计
+\end{enumerate}
 
-\subsubsection{7.6.3 处理逻辑与后端交互}
+\subsubsection{处理逻辑与后端交互}
 
-1. 页面初始化：调用接口加载备份记录列表与系统运行信息
+\begin{enumerate}
+\item  页面初始化：调用接口加载备份记录列表与系统运行信息
 
-2. 手动备份按钮点击事件：调用数据备份接口，成功后刷新备份列表，提供文件下载
+\item  手动备份按钮点击事件：调用数据备份接口，成功后刷新备份列表，提供文件下载
 
-3. 恢复按钮点击事件：弹出二次确认弹窗，确认后上传备份文件，调用数据恢复接口，成功后提示用户重新登录
+\item  恢复按钮点击事件：弹出二次确认弹窗，确认后上传备份文件，调用数据恢复接口，成功后提示用户重新登录
+\end{enumerate}
 
-\section{8 数据库设计}
+\section{数据库设计}
 
-\subsection{8.1 数据库选型}
+\subsection{数据库选型}
 
 基于需求文档「本地存储」要求，选型SQLite 3作为系统数据库，优势如下：
+\begin{enumerate}
+\item  轻量级嵌入式数据库，无需独立安装部署，单文件存储，适配全平台操作系统
 
-1. 轻量级嵌入式数据库，无需独立安装部署，单文件存储，适配全平台操作系统
+\item  完全开源免费，无版权限制，符合项目经济可行性要求
 
-2. 完全开源免费，无版权限制，符合项目经济可行性要求
+\item  支持完整的关系型数据库特性，满足系统事务、索引、关联查询需求
 
-3. 支持完整的关系型数据库特性，满足系统事务、索引、关联查询需求
+\item  适配Python标准库，无需额外依赖，符合技术可行性要求
+\end{enumerate}
 
-4. 适配Python标准库，无需额外依赖，符合技术可行性要求
+\subsection{核心表结构设计}
 
-\subsection{8.2 核心表结构设计}
+\subsubsection{用户表}
 
-\subsubsection{8.2.1 用户表（sys_user）}
-
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|l|l|l|}
         \hline
@@ -1582,26 +1652,25 @@ BorrowRecordDto结构：
         \hline
         id & TEXT & 是 & 是 & 是 & 用户唯一ID，UUID生成 \\
         \hline
-        login_name & TEXT & 否 & 是 & 是 & 登录用户名 \\
+        login\_name & TEXT & 否 & 是 & 是 & 登录用户名 \\
         \hline
         password & TEXT & 否 & 是 & 否 & 加盐加密后的密码 \\
         \hline
-        real_name & TEXT & 否 & 是 & 否 & 用户真实姓名 \\
+        real\_name & TEXT & 否 & 是 & 否 & 用户真实姓名 \\
         \hline
         role & TEXT & 否 & 是 & 否 & 用户角色：普通用户/图书管理员/系统维护人员 \\
         \hline
-        create_time & DATETIME & 否 & 是 & 否 & 创建时间 \\
+        create\_time & DATETIME & 否 & 是 & 否 & 创建时间 \\
         \hline
-        update_time & DATETIME & 否 & 是 & 否 & 更新时间 \\
+        update\_time & DATETIME & 否 & 是 & 否 & 更新时间 \\
         \hline
     \end{tabular}
 \end{table}
+索引：login\_name  唯一索引
 
-索引：login_name 唯一索引
+\subsubsection{图书表}
 
-\subsubsection{8.2.2 图书表（book_info）}
-
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|l|l|l|}
         \hline
@@ -1611,7 +1680,7 @@ BorrowRecordDto结构：
         \hline
         isbn & TEXT & 否 & 是 & 是 & 图书ISBN号，业务唯一标识 \\
         \hline
-        book_name & TEXT & 否 & 是 & 否 & 书名 \\
+        book\_name & TEXT & 否 & 是 & 否 & 书名 \\
         \hline
         author & TEXT & 否 & 是 & 否 & 作者 \\
         \hline
@@ -1619,20 +1688,20 @@ BorrowRecordDto结构：
         \hline
         stock & INTEGER & 否 & 是 & 否 & 可用库存，默认0，≥0 \\
         \hline
-        total_count & INTEGER & 否 & 是 & 否 & 总馆藏数量，默认0，≥0 \\
+        total\_count & INTEGER & 否 & 是 & 否 & 总馆藏数量，默认0，≥0 \\
         \hline
-        create_time & DATETIME & 否 & 是 & 否 & 入库时间 \\
+        create\_time & DATETIME & 否 & 是 & 否 & 入库时间 \\
         \hline
-        update_time & DATETIME & 否 & 是 & 否 & 更新时间 \\
+        update\_time & DATETIME & 否 & 是 & 否 & 更新时间 \\
         \hline
     \end{tabular}
 \end{table}
 
-索引：isbn 唯一索引；book_name 普通索引；author 普通索引
+索引：isbn 唯一索引；book\_name 普通索引；author 普通索引
 
-\subsubsection{8.2.3 借阅记录表（borrow_record）}
+\subsubsection{借阅记录表}
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|l|l|l|}
         \hline
@@ -1642,148 +1711,56 @@ BorrowRecordDto结构：
         \hline
         isbn & TEXT & 否 & 是 & 否 & 图书ISBN号 \\
         \hline
-        book_name & TEXT & 否 & 是 & 否 & 书名 \\
+        book\_name & TEXT & 否 & 是 & 否 & 书名 \\
         \hline
-        borrower_name & TEXT & 否 & 是 & 否 & 借阅人姓名 \\
+        borrower\_name & TEXT & 否 & 是 & 否 & 借阅人姓名 \\
         \hline
-        borrower_phone & TEXT & 否 & 否 & 否 & 借阅人联系电话 \\
+        borrower\_phone & TEXT & 否 & 否 & 否 & 借阅人联系电话 \\
         \hline
-        borrow_time & DATETIME & 否 & 是 & 否 & 借阅时间 \\
+        borrow\_time & DATETIME & 否 & 是 & 否 & 借阅时间 \\
         \hline
-        return_time & DATETIME & 否 & 否 & 否 & 归还时间，未归还为NULL \\
+        return\_time & DATETIME & 否 & 否 & 否 & 归还时间，未归还为NULL \\
         \hline
         status & TEXT & 否 & 是 & 否 & 借阅状态：未归还/已归还，默认未归还 \\
         \hline
     \end{tabular}
 \end{table}
 
-索引：isbn 普通索引；borrower_name 普通索引；status 普通索引
+索引：isbn 普通索引；borrower\_name 普通索引；status 普通索引
 
-\subsubsection{8.2.4 系统配置表（sys_config）}
+\subsubsection{系统配置表}
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|l|l|l|}
         \hline
-        字段名 & 类型 & 主键 & 非空 & 唯一 & 说明 \\
-        \hline
-        id & TEXT & 是 & 是 & 是 & 配置ID \\
-        \hline
-        config_key & TEXT & 否 & 是 & 是 & 配置键 \\
-        \hline
-        config_value & TEXT & 否 & 是 & 否 & 配置值 \\
-        \hline
-        description & TEXT & 否 & 否 & 否 & 配置说明 \\
-        \hline
-        create_time & DATETIME & 否 & 是 & 否 & 创建时间 \\
-        \hline
-        update_time & DATETIME & 否 & 是 & 否 & 更新时间 \\
         \hline
     \end{tabular}
 \end{table}
 
-\subsubsection{8.2.5 操作日志表（sys_operation_log）}
+\subsubsection{操作日志表}
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|l|l|l|}
         \hline
-        字段名 & 类型 & 主键 & 非空 & 唯一 & 说明 \\
-        \hline
-        id & TEXT & 是 & 是 & 是 & 日志ID \\
-        \hline
-        user_id & TEXT & 否 & 是 & 否 & 操作人ID \\
-        \hline
-        user_name & TEXT & 否 & 是 & 否 & 操作人姓名 \\
-        \hline
-        operation_type & TEXT & 否 & 是 & 否 & 操作类型：登录/新增/修改/删除/借阅/归还/备份/恢复 \\
-        \hline
-        operation_content & TEXT & 否 & 是 & 否 & 操作详情 \\
-        \hline
-        operation_result & TEXT & 否 & 是 & 否 & 操作结果：成功/失败 \\
-        \hline
-        operation_time & DATETIME & 否 & 是 & 否 & 操作时间 \\
-        \hline
-        ip_address & TEXT & 否 & 否 & 否 & 操作IP地址 \\
         \hline
     \end{tabular}
 \end{table}
 
-\subsection{8.3 数据库初始化脚本}
+\subsection{数据库初始化脚本}
 
-\begin{table}[htbp]
+\begin{verbatim}
+
+\end{verbatim}
+
+\section{工具与技术选型}
+
+\subsection{开发语言与运行环境}
+
+\begin{table}[H]
     \centering
-    \begin{tabular}{|l|}
-        \hline
-        SQL\\
-        -- 创建用户表\\
-        CREATE TABLE IF NOT EXISTS sys_user (\\
-            id TEXT PRIMARY KEY NOT NULL,\\
-            login_name TEXT NOT NULL UNIQUE,\\
-            password TEXT NOT NULL,\\
-            real_name TEXT NOT NULL,\\
-            role TEXT NOT NULL,\\
-            create_time DATETIME NOT NULL DEFAULT (datetime('now', 'localtime')),\\
-            update_time DATETIME NOT NULL DEFAULT (datetime('now', 'localtime'))\\
-        );\\
-        \\
-        -- 创建图书表\\
-        CREATE TABLE IF NOT EXISTS book_info (\\
-            id TEXT PRIMARY KEY NOT NULL,\\
-            isbn TEXT NOT NULL UNIQUE,\\
-            book_name TEXT NOT NULL,\\
-            author TEXT NOT NULL,\\
-            publisher TEXT,\\
-            stock INTEGER NOT NULL DEFAULT 0 CHECK (stock >= 0),\\
-            total_count INTEGER NOT NULL DEFAULT 0 CHECK (total_count >= 0),\\
-            create_time DATETIME NOT NULL DEFAULT (datetime('now', 'localtime')),\\
-            update_time DATETIME NOT NULL DEFAULT (datetime('now', 'localtime'))\\
-        );\\
-        \\
-        -- 创建借阅记录表\\
-        CREATE TABLE IF NOT EXISTS borrow_record (\\
-            id TEXT PRIMARY KEY NOT NULL,\\
-            isbn TEXT NOT NULL,\\
-            book_name TEXT NOT NULL,\\
-            borrower_name TEXT NOT NULL,\\
-            borrower_phone TEXT,\\
-            borrow_time DATETIME NOT NULL DEFAULT (datetime('now', 'localtime')),\\
-            return_time DATETIME,\\
-            status TEXT NOT NULL DEFAULT '未归还' CHECK (status IN ('未归还', '已归还'))\\
-        );\\
-        \\
-        -- 创建系统配置表\\
-        CREATE TABLE IF NOT EXISTS sys_config (\\
-            id TEXT PRIMARY KEY NOT NULL,\\
-            config_key TEXT NOT NULL UNIQUE,\\
-            config_value TEXT NOT NULL,\\
-            description TEXT,\\
-            create_time DATETIME NOT NULL DEFAULT (datetime('now', 'localtime')),\\
-            update_time DATETIME NOT NULL DEFAULT (datetime('now', 'localtime'))\\
-        );\\
-        \\
-        -- 创建操作日志表\\
-        CREATE TABLE IF NOT EXISTS sys_operation_log (\\
-            id TEXT PRIMARY KEY NOT NULL,\\
-            user_id TEXT NOT NULL,\\
-            user_name TEXT NOT NULL,\\
-            operation_type TEXT NOT NULL,\\
-            operation_content TEXT NOT NULL,\\
-            operation_result TEXT NOT NULL,\\
-            operation_time DATETIME NOT NULL DEFAULT (datetime('now', 'localtime')),\\
-            ip_address TEXT\\
-        ); \\
-        \hline
-    \end{tabular}
-\end{table}
-
-\section{9 工具与技术选型}
-
-\subsection{9.1 开发语言与运行环境}
-
-\begin{table}[htbp]
-    \centering
-    \begin{tabular}{|l|l|l|l|}
+    \begin{tabularx}{\linewidth}{|l|l|X|X|}
         \hline
         工具/环境 & 版本要求 & 选型说明 & 用途 \\
         \hline
@@ -1793,14 +1770,14 @@ BorrowRecordDto结构：
         \hline
         Redis & 6.0及以上 & 开源内存数据库，高性能，支持过期时间设置，适配登录会话与验证码缓存 & 验证码、用户登录会话缓存 \\
         \hline
-    \end{tabular}
+    \end{tabularx}
 \end{table}
 
-\subsection{9.2 核心框架与依赖库}
+\subsection{核心框架与依赖库}
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
-    \begin{tabular}{|l|l|l|l|}
+    \begin{tabularx}{\linewidth}{|l|l|X|X|}
         \hline
         依赖库 & 版本要求 & 选型说明 & 用途 \\
         \hline
@@ -1818,14 +1795,14 @@ BorrowRecordDto结构：
         \hline
         python-multipart & 0.0.6+ & 表单文件解析库，适配FastAPI文件上传 & 备份文件上传处理 \\
         \hline
-    \end{tabular}
+    \end{tabularx}
 \end{table}
 
-\subsection{9.3 前端技术选型}
+\subsection{前端技术选型}
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
-    \begin{tabular}{|l|l|l|l|}
+    \begin{tabularx}{\linewidth}{|l|l|X|X|}
         \hline
         技术栈 & 版本要求 & 选型说明 & 用途 \\
         \hline
@@ -1839,12 +1816,12 @@ BorrowRecordDto结构：
         \hline
         Pinia & 2.1.0+ & Vue官方状态管理库，轻量级，支持持久化 & 前端全局状态管理（用户信息、Token） \\
         \hline
-    \end{tabular}
+    \end{tabularx}
 \end{table}
 
-\subsection{9.4 开发与调试工具}
+\subsection{开发与调试工具}
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|l|}
         \hline
@@ -1865,205 +1842,242 @@ BorrowRecordDto结构：
     \end{tabular}
 \end{table}
 
-\section{10 复用性设计}
+\section{复用性设计}
 
 减少重复代码，提升可维护性与可扩展性。
 
-\subsection{10.1 代码级复用}
+\subsection{代码级复用}
 
-1. 通用工具类复用：将加密、验证码、日期、分页、数据库连接等通用逻辑封装为静态工具类，全局无状态调用，所有业务模块均可复用，避免重复实现。
+\begin{enumerate}
+\item  通用工具类复用：将加密、验证码、日期、分页、数据库连接等通用逻辑封装为静态工具类，全局无状态调用，所有业务模块均可复用，避免重复实现。
 
-2. 基础类继承复用：封装BaseDAO基础数据访问类，实现通用的CRUD方法，所有业务DAO类均继承此类，复用通用数据库操作逻辑，子类仅需实现专属业务方法。
+\item  基础类继承复用：封装BaseDAO基础数据访问类，实现通用的CRUD方法，所有业务DAO类均继承此类，复用通用数据库操作逻辑，子类仅需实现专属业务方法。
 
-3. 通用异常处理复用：封装全局统一异常处理器，定义系统自定义异常类，所有业务模块抛出的异常均由全局处理器统一处理，复用异常日志记录、响应格式封装逻辑。
+\item  通用异常处理复用：封装全局统一异常处理器，定义系统自定义异常类，所有业务模块抛出的异常均由全局处理器统一处理，复用异常日志记录、响应格式封装逻辑。
 
-4. 通用日志处理复用：封装统一的日志工具类，定义操作日志、安全日志、错误日志的规范，所有业务模块复用日志记录方法，保证日志格式统一。
+\item  通用日志处理复用：封装统一的日志工具类，定义操作日志、安全日志、错误日志的规范，所有业务模块复用日志记录方法，保证日志格式统一。
+\end{enumerate}
 
-\subsection{10.2 组件级复用}
+\subsection{组件级复用}
 
-1. 前端通用组件复用：封装通用表单组件、表格组件、分页组件、弹窗组件、查询组件，所有业务页面均可复用，统一页面样式与交互逻辑，减少重复开发。
+\begin{enumerate}
+\item  前端通用组件复用：封装通用表单组件、表格组件、分页组件、弹窗组件、查询组件，所有业务页面均可复用，统一页面样式与交互逻辑，减少重复开发。
 
-2. 权限控制组件复用：封装前端权限指令、后端登录拦截器、权限校验切面，所有接口与页面均复用权限控制逻辑，无需在每个业务中重复编写权限校验代码。
+\item  权限控制组件复用：封装前端权限指令、后端登录拦截器、权限校验切面，所有接口与页面均复用权限控制逻辑，无需在每个业务中重复编写权限校验代码。
 
-3. 参数校验组件复用：基于Pydantic封装通用参数校验基类，所有接口DTO均继承基类，复用通用非空校验、格式校验、类型校验逻辑。
+\item  参数校验组件复用：基于Pydantic封装通用参数校验基类，所有接口DTO均继承基类，复用通用非空校验、格式校验、类型校验逻辑。
 
-4. 事务控制组件复用：封装数据库事务切面，所有需要事务控制的业务方法复用事务开启、提交、回滚逻辑，无需重复编写事务管理代码。
+\item  事务控制组件复用：封装数据库事务切面，所有需要事务控制的业务方法复用事务开启、提交、回滚逻辑，无需重复编写事务管理代码。
+\end{enumerate}
 
-\subsection{10.3 规则级复用}
+\subsection{规则级复用}
 
-1. 业务规则封装复用：将库存校验、借阅校验、ISBN唯一性校验等核心业务规则，封装为独立的规则校验类，所有涉及该规则的业务场景均可复用，保证业务规则的一致性。
+\begin{enumerate}
+\item  业务规则封装复用：将库存校验、借阅校验、ISBN唯一性校验等核心业务规则，封装为独立的规则校验类，所有涉及该规则的业务场景均可复用，保证业务规则的一致性。
 
-2. 校验规则统一管理：将前端表单校验规则与后端接口校验规则统一管理，复用同一套校验逻辑，避免前后端校验规则不一致的问题。
+\item  校验规则统一管理：将前端表单校验规则与后端接口校验规则统一管理，复用同一套校验逻辑，避免前后端校验规则不一致的问题。
 
-3. 状态流转规则复用：封装图书状态、借阅记录状态的流转规则，所有涉及状态变更的业务均复用该规则，保证状态流转的规范性。
+\item  状态流转规则复用：封装图书状态、借阅记录状态的流转规则，所有涉及状态变更的业务均复用该规则，保证状态流转的规范性。
+\end{enumerate}
 
-\subsection{10.4 接口级复用}
+\subsection{接口级复用}
 
-1. 统一接口规范复用：所有接口遵循统一的请求路径、请求方式、响应格式、错误码规范，前端可复用统一的接口请求方法、响应处理逻辑、异常处理逻辑。
+\begin{enumerate}
+\item  统一接口规范复用：所有接口遵循统一的请求路径、请求方式、响应格式、错误码规范，前端可复用统一的接口请求方法、响应处理逻辑、异常处理逻辑。
 
-2. 通用接口复用：封装通用的分页查询接口、数据导出接口、字典查询接口，所有业务模块均可复用，无需重复开发同类接口。
+\item  通用接口复用：封装通用的分页查询接口、数据导出接口、字典查询接口，所有业务模块均可复用，无需重复开发同类接口。
 
-3. 接口版本控制：采用/api/v1的路径版本控制方式，后续接口迭代可兼容旧版本接口，实现接口的向后兼容复用。
+\item  接口版本控制：采用/api/v1的路径版本控制方式，后续接口迭代可兼容旧版本接口，实现接口的向后兼容复用。
+\end{enumerate}
 
-\section{11 跑批设计}
+\section{跑批设计}
 
-\subsection{11.1 数据自动备份跑批}
+\subsection{数据自动备份跑批}
 
-\subsubsection{11.1.1 基础信息}
+\subsubsection{基础信息}
 
-• 跑批名称：系统数据自动备份跑批
+\begin{enumerate}
+\item  跑批名称：系统数据自动备份跑批
 
-• 执行周期：每日凌晨2:00执行一次
+\item  执行周期：每日凌晨2:00执行一次
 
-• 触发方式：定时任务自动触发，支持手动触发
+\item  触发方式：定时任务自动触发，支持手动触发
 
-• 执行环境：系统服务端，Python APScheduler定时任务框架
+\item  执行环境：系统服务端，Python APScheduler定时任务框架
+\end{enumerate}
 
-\subsubsection{11.1.2 处理逻辑}
+\subsubsection{处理逻辑}
 
-1. 定时任务触发后，先校验系统当前是否有活跃的业务操作，无操作则执行备份，有操作则延迟10分钟重试，最多重试3次
+\begin{enumerate}
+\item  定时任务触发后，先校验系统当前是否有活跃的业务操作，无操作则执行备份，有操作则延迟10分钟重试，最多重试3次
 
-2. 读取数据库全量业务数据，生成JSON格式备份数据
+\item  读取数据库全量业务数据，生成JSON格式备份数据
 
-3. 使用AES算法加密备份数据，生成以日期为命名的备份文件，保存至指定备份目录
+\item  使用AES算法加密备份数据，生成以日期为命名的备份文件，保存至指定备份目录
 
-4. 记录备份日志，包含备份时间、备份版本、文件大小、备份状态
+\item  记录备份日志，包含备份时间、备份版本、文件大小、备份状态
 
-5. 校验备份目录中的历史备份文件，仅保留最近30天的备份文件，超过30天的自动清理
+\item  校验备份目录中的历史备份文件，仅保留最近30天的备份文件，超过30天的自动清理
 
-6. 备份完成后，发送系统通知给系统维护人员，备份失败则发送告警通知
+\item  备份完成后，发送系统通知给系统维护人员，备份失败则发送告警通知
+\end{enumerate}
 
-\subsubsection{11.1.3 异常处理与重跑机制}
+\subsubsection{异常处理与重跑机制}
 
-1. 备份过程中出现异常，立即记录异常日志，终止当前备份操作，不影响系统正常业务运行
+\begin{enumerate}
+\item  备份过程中出现异常，立即记录异常日志，终止当前备份操作，不影响系统正常业务运行
 
-2. 当日备份失败，系统将在凌晨3:00、4:00自动重试2次，3次均失败则停止重试，发送告警通知
+\item  当日备份失败，系统将在凌晨3:00、4:00自动重试2次，3次均失败则停止重试，发送告警通知
 
-3. 支持手动触发重跑，维护人员可在系统管理页面手动触发备份操作，补全当日备份
+\item  支持手动触发重跑，维护人员可在系统管理页面手动触发备份操作，补全当日备份
+\end{enumerate}
 
-\subsection{11.2 历史归档数据清理跑批}
+\subsection{历史归档数据清理跑批}
 
-\subsubsection{11.2.1 基础信息}
+\subsubsection{基础信息}
 
-• 跑批名称：历史归档数据清理跑批
+\begin{enumerate}
+\item  跑批名称：历史归档数据清理跑批
 
-• 执行周期：每月1日凌晨3:00执行一次
+\item  执行周期：每月1日凌晨3:00执行一次
 
-• 触发方式：定时任务自动触发
+\item  触发方式：定时任务自动触发
 
-• 执行环境：系统服务端，Python APScheduler定时任务框架
+\item  执行环境：系统服务端，Python APScheduler定时任务框架
+\end{enumerate}
 
-\subsubsection{11.2.2 处理逻辑}
+\subsubsection{处理逻辑}
 
-1. 定时任务触发后，查询1年以前的已完成归还的借阅记录，标记为归档数据
+\begin{enumerate}
+\item  定时任务触发后，查询1年以前的已完成归还的借阅记录，标记为归档数据
 
-2. 将归档数据导出为备份文件，保存至归档目录，永久留存
+\item  将归档数据导出为备份文件，保存至归档目录，永久留存
 
-3. 校验归档文件完整性，校验通过后，删除数据库中对应的归档借阅记录
+\item  校验归档文件完整性，校验通过后，删除数据库中对应的归档借阅记录
 
-4. 清理1年以前的操作日志数据，导出归档后删除数据库中对应数据
+\item  清理1年以前的操作日志数据，导出归档后删除数据库中对应数据
 
-5. 记录清理日志，包含清理时间、清理数据量、归档文件信息
+\item  记录清理日志，包含清理时间、清理数据量、归档文件信息
 
-6. 清理完成后，执行数据库VACUUM操作，释放数据库存储空间，优化数据库性能
+\item  清理完成后，执行数据库VACUUM操作，释放数据库存储空间，优化数据库性能
+\end{enumerate}
 
-\subsubsection{11.2.3 异常处理与重跑机制}
+\subsubsection{异常处理与重跑机制}
 
-1. 清理过程中出现异常，立即回滚数据删除操作，记录异常日志，终止跑批
+\begin{enumerate}
+\item  清理过程中出现异常，立即回滚数据删除操作，记录异常日志，终止跑批
 
-2. 支持手动触发重跑，维护人员可手动执行归档清理操作
+\item  支持手动触发重跑，维护人员可手动执行归档清理操作
 
-3. 数据清理前必须完成全量数据备份，备份失败则终止清理操作
+\item  数据清理前必须完成全量数据备份，备份失败则终止清理操作
+\end{enumerate}
 
-\section{12 安全设计}
+\section{安全设计}
 
-\subsection{12.1 认证与授权安全}
+\subsection{认证与授权安全}
 
-1. 身份认证机制：基于Token的无状态认证机制，参考单点登录设计文档，用户登录成功后生成唯一Token，存入Redis设置2小时过期时间，超时自动登出。
+\begin{enumerate}
+\item  身份认证机制：基于Token的无状态认证机制，参考单点登录设计文档，用户登录成功后生成唯一Token，存入Redis设置2小时过期时间，超时自动登出。
 
-2. 权限控制机制：基于RBAC角色权限模型，严格按照角色权限矩阵控制用户可访问的页面与接口，无权限请求直接拦截，前端隐藏无权限菜单与按钮。
+\item  权限控制机制：基于RBAC角色权限模型，严格按照角色权限矩阵控制用户可访问的页面与接口，无权限请求直接拦截，前端隐藏无权限菜单与按钮。
 
-3. 登录安全防护：所有登录操作均记录操作日志，包含登录IP、时间、结果
+\item  登录安全防护：所有登录操作均记录操作日志，包含登录IP、时间、结果
+\end{enumerate}
 
-\subsection{12.2 数据加密安全}
+\subsection{数据加密安全}
 
-1. 传输加密：前端密码采用RSA非对称加密后传输，后端二次加盐加密，防止密码在传输过程中泄露。
+\begin{enumerate}
+\item  传输加密：前端密码采用RSA非对称加密后传输，后端二次加盐加密，防止密码在传输过程中泄露。
 
-2. 存储加密：备份文件采用AES对称加密存储，防止备份文件数据泄露；用户敏感信息加密存储，不存储明文敏感数据。
+\item  存储加密：备份文件采用AES对称加密存储，防止备份文件数据泄露；用户敏感信息加密存储，不存储明文敏感数据。
 
-3. 加密算法规范：采用行业标准加密算法，密码加密使用MD5+盐值，非对称加密使用RSA2048，对称加密使用AES-128，不使用自定义不安全加密算法。
+\item  加密算法规范：采用行业标准加密算法，密码加密使用MD5+盐值，非对称加密使用RSA2048，对称加密使用AES-128，不使用自定义不安全加密算法。
+\end{enumerate}
 
-\subsection{12.3 输入校验与防注入}
+\subsection{输入校验与防注入}
 
-1. 全链路参数校验：前端表单校验+后端接口参数校验+数据库参数化查询，三层校验机制，防止非法参数传入。
+\begin{enumerate}
+\item  全链路参数校验：前端表单校验+后端接口参数校验+数据库参数化查询，三层校验机制，防止非法参数传入。
 
-2. SQL注入防护：所有数据库查询均采用参数化查询，不拼接SQL语句，防止SQL注入攻击。
+\item  SQL注入防护：所有数据库查询均采用参数化查询，不拼接SQL语句，防止SQL注入攻击。
 
-3. XSS防护：所有前端输入的内容均进行转义处理，后端存储前进行特殊字符过滤，防止XSS跨站脚本攻击。
+\item  XSS防护：所有前端输入的内容均进行转义处理，后端存储前进行特殊字符过滤，防止XSS跨站脚本攻击。
 
-4. CSRF防护：所有POST/PUT/DELETE请求均需携带Token，前端请求头统一携带，后端拦截器校验，防止CSRF跨站请求伪造攻击。
+\item  CSRF防护：所有POST/PUT/DELETE请求均需携带Token，前端请求头统一携带，后端拦截器校验，防止CSRF跨站请求伪造攻击。
+\end{enumerate}
 
-\subsection{12.4 敏感数据处理}
+\subsection{敏感数据处理}
 
-1. 敏感数据脱敏：用户手机号、身份证号等敏感信息，前端展示时进行脱敏处理，仅展示部分字符。
+\begin{enumerate}
+\item  敏感数据脱敏：用户手机号、身份证号等敏感信息，前端展示时进行脱敏处理，仅展示部分字符。
 
-2. 敏感操作审计：所有数据删除、数据恢复、用户管理等敏感操作，均记录详细的操作日志，包含操作人、操作时间、操作内容、操作IP、操作结果，可追溯可审计。
+\item  敏感操作审计：所有数据删除、数据恢复、用户管理等敏感操作，均记录详细的操作日志，包含操作人、操作时间、操作内容、操作IP、操作结果，可追溯可审计。
 
-3. 数据访问控制：普通用户仅可访问个人相关数据，不可访问其他用户的借阅记录，图书管理员不可访问系统管理相关数据，严格控制数据访问边界。
+\item  数据访问控制：普通用户仅可访问个人相关数据，不可访问其他用户的借阅记录，图书管理员不可访问系统管理相关数据，严格控制数据访问边界。
+\end{enumerate}
 
-\subsection{12.5 业务安全规则}
+\subsection{业务安全规则}
 
-1. 图书删除校验：存在未归还借阅记录的图书，禁止删除，防止数据丢失与业务异常。
+\begin{enumerate}
+\item  图书删除校验：存在未归还借阅记录的图书，禁止删除，防止数据丢失与业务异常。
 
-2. 库存安全校验：库存扣减与恢复均在数据库事务中执行，防止超借、库存负数等异常情况。
+\item  库存安全校验：库存扣减与恢复均在数据库事务中执行，防止超借、库存负数等异常情况。
 
-3. 借阅记录不可篡改：借阅记录生成后，仅可更新归还时间与状态，不可修改借阅人、ISBN、借阅时间等核心信息，保证借阅记录的真实性与完整性。
+\item  借阅记录不可篡改：借阅记录生成后，仅可更新归还时间与状态，不可修改借阅人、ISBN、借阅时间等核心信息，保证借阅记录的真实性与完整性。
+\end{enumerate}
 
-\section{13 性能设计}
+\section{性能设计}
 
-\subsection{13.1 查询性能优化}
+\subsection{查询性能优化}
 
-1. 索引优化：为所有高频查询字段建立合适的索引，包括ISBN、书名、作者、借阅人、借阅状态、登录名等，避免全表扫描，提升查询效率。
+\begin{enumerate}
+\item  索引优化：为所有高频查询字段建立合适的索引，包括ISBN、书名、作者、借阅人、借阅状态、登录名等，避免全表扫描，提升查询效率。
 
-2. 分页查询优化：所有列表查询均采用分页查询，限制每页最大条数，避免全量数据查询导致的内存占用过高与响应缓慢问题。
+\item  分页查询优化：所有列表查询均采用分页查询，限制每页最大条数，避免全量数据查询导致的内存占用过高与响应缓慢问题。
 
-3. 关联查询优化：减少多表关联查询，借阅记录列表提前冗余书名信息，避免查询时关联图书表。
+\item  关联查询优化：减少多表关联查询，借阅记录列表提前冗余书名信息，避免查询时关联图书表。
 
-4. 缓存优化：高频访问的系统配置、图书分类数据，存入Redis缓存，减少数据库查询次数。
+\item  缓存优化：高频访问的系统配置、图书分类数据，存入Redis缓存，减少数据库查询次数。
+\end{enumerate}
 
-\subsection{13.2 接口响应优化}
+\subsection{接口响应优化}
 
-1. 接口超时控制：所有接口设置最大响应时间，慢查询接口记录告警日志，优化处理逻辑。
+\begin{enumerate}
+\item  接口超时控制：所有接口设置最大响应时间，慢查询接口记录告警日志，优化处理逻辑。
 
-2. 非核心逻辑异步处理：操作日志记录、备份文件生成、通知发送等非核心逻辑，采用异步线程处理，不阻塞主业务流程，提升接口响应速度。
+\item  非核心逻辑异步处理：操作日志记录、备份文件生成、通知发送等非核心逻辑，采用异步线程处理，不阻塞主业务流程，提升接口响应速度。
 
-3. 数据压缩传输：接口响应数据采用Gzip压缩，减少网络传输数据量，提升前端加载速度。
+\item  数据压缩传输：接口响应数据采用Gzip压缩，减少网络传输数据量，提升前端加载速度。
 
-4. 拦截器优化：登录校验、权限校验等拦截器逻辑采用Redis缓存查询，避免每次请求都查询数据库，减少接口处理耗时。
+\item  拦截器优化：登录校验、权限校验等拦截器逻辑采用Redis缓存查询，避免每次请求都查询数据库，减少接口处理耗时。
+\end{enumerate}
 
-\subsection{13.3 大数据量处理优化}
+\subsection{大数据量处理优化}
 
-1. 数据归档清理：通过定时跑批，定期清理历史归档数据，控制单表数据量，避免单表数据量过大导致的查询性能下降。
+\begin{enumerate}
+\item  数据归档清理：通过定时跑批，定期清理历史归档数据，控制单表数据量，避免单表数据量过大导致的查询性能下降。
 
-2. 批量操作优化：批量新增图书等批量操作，采用批量写入数据库的方式，减少数据库IO次数，提升处理效率。
+\item  批量操作优化：批量新增图书等批量操作，采用批量写入数据库的方式，减少数据库IO次数，提升处理效率。
 
-3. 流式处理：数据备份、数据导出等大数据量操作，采用流式读写方式，避免全量数据加载到内存导致的内存溢出问题。
+\item  流式处理：数据备份、数据导出等大数据量操作，采用流式读写方式，避免全量数据加载到内存导致的内存溢出问题。
+\end{enumerate}
 
-\subsection{13.4 存储性能优化}
+\subsection{存储性能优化}
 
-1. 数据库定期优化：每月定时跑批执行数据库VACUUM操作，整理数据库文件碎片，释放存储空间，提升数据库读写性能。
+\begin{enumerate}
+\item  数据库定期优化：每月定时跑批执行数据库VACUUM操作，整理数据库文件碎片，释放存储空间，提升数据库读写性能。
 
-2. 数据库连接优化：采用数据库连接池管理数据库连接，避免频繁创建与关闭数据库连接带来的性能开销。
+\item  数据库连接优化：采用数据库连接池管理数据库连接，避免频繁创建与关闭数据库连接带来的性能开销。
+\item  读写分离设计：预留读写分离扩展能力，查询操作走从库，写入操作走主库，为后续系统扩容提供支持。
+\end{enumerate}
 
-3. 读写分离设计：预留读写分离扩展能力，查询操作走从库，写入操作走主库，为后续系统扩容提供支持。
-
-\section{14 统一错误码设计}
+\section{统一错误码设计}
 
 系统采用统一的错误码规范，错误码为5位数字，前两位为模块编码，后三位为具体错误编码，便于问题定位与排查。
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
-    \begin{tabular}{|l|l|l|l|}
+    \begin{tabularx}{\linewidth}{|l|l|l|X|}
         \hline
         错误码 & 错误信息 & 模块 & 说明 \\
         \hline
@@ -2107,18 +2121,18 @@ BorrowRecordDto结构：
         \hline
         40003 & 数据恢复失败 & 系统模块 & 数据恢复执行失败 \\
         \hline
-    \end{tabular}
+    \end{tabularx}
 \end{table}
 
-\section{15 兼容性设计}
+\section{兼容性设计}
 
-\subsection{15.1 操作系统兼容性}
+\subsection{操作系统兼容性}
 
 1. 服务端兼容Windows 7/10/11、macOS、Linux全主流操作系统，无系统专属依赖，仅需Python环境即可运行。
 
 2. 前端兼容Windows、macOS、Linux系统的主流浏览器，无操作系统专属限制。
 
-\subsection{15.2 运行环境兼容性}
+\subsection{运行环境兼容性}
 
 1. Python版本兼容Python 3.6及以上所有稳定版本，无低版本专属语法，核心功能可通过Python标准库实现。
 
@@ -2126,7 +2140,7 @@ BorrowRecordDto结构：
 
 3. 前端兼容Node.js 14.0及以上版本，适配Vue3的所有稳定运行环境。
 
-\subsection{15.3 浏览器兼容性}
+\subsection{浏览器兼容性}
 
 前端页面兼容以下主流浏览器的最新2个版本：
 
@@ -2140,15 +2154,15 @@ BorrowRecordDto结构：
 
 5. 360浏览器、QQ浏览器等国产双核浏览器的极速模式
 
-\subsection{15.4 分辨率兼容性}
+\subsection{分辨率兼容性}
 
 1. 页面采用响应式布局，适配1366*768至4K的主流分辨率，保证页面元素正常展示，无错位、遮挡问题。
 
 2. 表格、表单组件适配不同分辨率，支持横向滚动，保证小分辨率下可正常操作。
 
-\section{16 测试要点设计}
+\section{测试要点设计}
 
-\subsection{16.1 单元测试要点}
+\subsection{单元测试要点}
 
 1. 实体类测试：测试实体类的核心方法，如库存扣减、状态更新、权限判断等方法的正确性。
 
@@ -2160,7 +2174,7 @@ BorrowRecordDto结构：
 
 5. 业务Manager类测试：覆盖所有业务方法的正常流程、分支流程、异常流程，测试业务逻辑的正确性。
 
-\subsection{16.2 集成测试要点}
+\subsection{集成测试要点}
 
 1. 接口集成测试：覆盖所有接口的正常请求、参数异常、权限异常、业务异常场景，测试接口响应的正确性。
 
@@ -2172,7 +2186,7 @@ BorrowRecordDto结构：
 
 5. 权限体系集成测试：测试不同角色用户的权限边界，无权限接口/页面的拦截机制是否生效。
 
-\subsection{16.3 功能测试要点}
+\subsection{功能测试要点}
 
 1. 登录功能测试：覆盖正常登录、用户名错误、密码错误、验证码过期、验证码错误、账户锁定、登出等场景。
 
@@ -2184,7 +2198,7 @@ BorrowRecordDto结构：
 
 5. 页面交互测试：测试所有页面的渲染、表单校验、按钮操作、弹窗、分页、菜单权限显隐的正确性。
 
-\subsection{16.4 性能测试要点}
+\subsection{性能测试要点}
 
 1. 接口响应性能测试：测试核心接口的响应时间，单接口响应时间需≤200ms，并发100请求下无异常。
 
@@ -2194,7 +2208,7 @@ BorrowRecordDto结构：
 
 4. 内存占用测试：测试系统长时间运行下的内存占用情况，无内存泄漏问题。
 
-\subsection{16.5 安全测试要点}
+\subsection{安全测试要点}
 
 1. SQL注入测试：测试所有接口的入参，传入SQL注入语句，验证是否存在注入漏洞。
 
@@ -2206,13 +2220,13 @@ BorrowRecordDto结构：
 
 5. 敏感数据泄露测试：测试接口响应、页面展示，验证敏感数据是否脱敏，是否存在明文密码泄露。
 
-\section{17 部署与运维设计}
+\section{部署与运维设计}
 
-\subsection{17.1 部署方式}
+\subsection{部署方式}
 
 系统采用前后端分离部署方式，支持Windows、macOS、Linux全平台部署，提供两种部署方案：
 
-\subsubsection{17.1.1 一键部署方案（推荐）}
+\subsubsection{一键部署方案（推荐）}
 
 1. 提供一键部署脚本，Windows系统提供bat脚本，Linux/macOS系统提供shell脚本
 
@@ -2222,7 +2236,7 @@ BorrowRecordDto结构：
 
 4. 部署完成后，默认访问地址：http://127.0.0.1:8000
 
-\subsubsection{17.1.2 分步部署方案}
+\subsubsection{分步部署方案}
 
 1. 环境准备：安装Python 3.6+、Node.js 14+
 
@@ -2244,11 +2258,11 @@ BorrowRecordDto结构：
 
 4. 缓存服务部署：安装Redis，配置后端Redis连接地址与密码
 
-\subsection{17.2 环境要求}
+\subsection{环境要求}
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
-    \begin{tabular}{|l|l|l|}
+    \begin{tabularx}{\linewidth}{|l|X|X|}
         \hline
         环境类型 & 最低配置 & 推荐配置 \\
         \hline
@@ -2262,10 +2276,10 @@ BorrowRecordDto结构：
         \hline
         网络 & 本地局域网访问，无需公网 & 支持公网访问，带宽10Mbps及以上 \\
         \hline
-    \end{tabular}
+    \end{tabularx}
 \end{table}
 
-\subsection{17.3 数据备份与恢复策略}
+\subsection{数据备份与恢复策略}
 
 1. 自动备份：每日凌晨自动执行全量数据备份，保留最近30天的备份文件，备份文件加密存储。
 
@@ -2277,7 +2291,7 @@ BorrowRecordDto结构：
 
 5. 数据库定期维护：每月执行一次数据库优化操作，整理碎片，优化性能，执行前自动备份全量数据。
 
-\subsection{17.4 日常运维要点}
+\subsection{日常运维要点}
 
 1. 系统状态监控：监控系统服务运行状态、内存占用、CPU占用、数据库文件大小，异常时及时告警。
 
