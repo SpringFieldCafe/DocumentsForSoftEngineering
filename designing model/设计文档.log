@@ -1,0 +1,3506 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.11)  14 MAR 2026 10:12
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档"
+(c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/ctex/ctex.sty (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2026-01-19 L3 programming layer (loader) 
+ (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count283
+))
+Package: ctex 2022/07/14 v2.5.10 Chinese adapter in LaTeX (CTEX)
+ (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/ctex/ctexhook.sty
+Package: ctexhook 2022/07/14 v2.5.10 Document and package hooks (CTEX)
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/ctex/ctexpatch.sty
+Package: ctexpatch 2022/07/14 v2.5.10 Patching commands (CTEX)
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
+ (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+LaTeX Encoding Info:    Redeclaring text command \capitalcedilla (encoding TS1) on input line 49.
+LaTeX Encoding Info:    Redeclaring text command \capitalogonek (encoding TS1) on input line 52.
+LaTeX Encoding Info:    Redeclaring text command \capitalgrave (encoding TS1) on input line 55.
+LaTeX Encoding Info:    Redeclaring text command \capitalacute (encoding TS1) on input line 56.
+LaTeX Encoding Info:    Redeclaring text command \capitalcircumflex (encoding TS1) on input line 57.
+LaTeX Encoding Info:    Redeclaring text command \capitaltilde (encoding TS1) on input line 58.
+LaTeX Encoding Info:    Redeclaring text command \capitaldieresis (encoding TS1) on input line 59.
+LaTeX Encoding Info:    Redeclaring text command \capitalhungarumlaut (encoding TS1) on input line 60.
+LaTeX Encoding Info:    Redeclaring text command \capitalring (encoding TS1) on input line 61.
+LaTeX Encoding Info:    Redeclaring text command \capitalcaron (encoding TS1) on input line 62.
+LaTeX Encoding Info:    Redeclaring text command \capitalbreve (encoding TS1) on input line 63.
+LaTeX Encoding Info:    Redeclaring text command \capitalmacron (encoding TS1) on input line 64.
+LaTeX Encoding Info:    Redeclaring text command \capitaldotaccent (encoding TS1) on input line 65.
+LaTeX Encoding Info:    Redeclaring text command \t (encoding TS1) on input line 66.
+LaTeX Encoding Info:    Redeclaring text command \capitaltie (encoding TS1) on input line 67.
+LaTeX Encoding Info:    Redeclaring text command \newtie (encoding TS1) on input line 68.
+LaTeX Encoding Info:    Redeclaring text command \capitalnewtie (encoding TS1) on input line 69.
+LaTeX Encoding Info:    Redeclaring text symbol \textcapitalcompwordmark (encoding TS1) on input line 70.
+LaTeX Encoding Info:    Redeclaring text symbol \textascendercompwordmark (encoding TS1) on input line 71.
+LaTeX Encoding Info:    Redeclaring text symbol \textquotestraightbase (encoding TS1) on input line 72.
+LaTeX Encoding Info:    Redeclaring text symbol \textquotestraightdblbase (encoding TS1) on input line 73.
+LaTeX Encoding Info:    Redeclaring text symbol \texttwelveudash (encoding TS1) on input line 74.
+LaTeX Encoding Info:    Redeclaring text symbol \textthreequartersemdash (encoding TS1) on input line 75.
+LaTeX Encoding Info:    Redeclaring text symbol \textleftarrow (encoding TS1) on input line 76.
+LaTeX Encoding Info:    Redeclaring text symbol \textrightarrow (encoding TS1) on input line 77.
+LaTeX Encoding Info:    Redeclaring text symbol \textblank (encoding TS1) on input line 78.
+LaTeX Encoding Info:    Redeclaring text symbol \textdollar (encoding TS1) on input line 79.
+LaTeX Encoding Info:    Redeclaring text symbol \textquotesingle (encoding TS1) on input line 80.
+LaTeX Encoding Info:    Redeclaring text command \textasteriskcentered (encoding TS1) on input line 81.
+LaTeX Encoding Info:    Redeclaring text symbol \textdblhyphen (encoding TS1) on input line 92.
+LaTeX Encoding Info:    Redeclaring text symbol \textfractionsolidus (encoding TS1) on input line 93.
+LaTeX Encoding Info:    Redeclaring text symbol \textzerooldstyle (encoding TS1) on input line 94.
+LaTeX Encoding Info:    Redeclaring text symbol \textoneoldstyle (encoding TS1) on input line 95.
+LaTeX Encoding Info:    Redeclaring text symbol \texttwooldstyle (encoding TS1) on input line 96.
+LaTeX Encoding Info:    Redeclaring text symbol \textthreeoldstyle (encoding TS1) on input line 97.
+LaTeX Encoding Info:    Redeclaring text symbol \textfouroldstyle (encoding TS1) on input line 98.
+LaTeX Encoding Info:    Redeclaring text symbol \textfiveoldstyle (encoding TS1) on input line 99.
+LaTeX Encoding Info:    Redeclaring text symbol \textsixoldstyle (encoding TS1) on input line 100.
+LaTeX Encoding Info:    Redeclaring text symbol \textsevenoldstyle (encoding TS1) on input line 101.
+LaTeX Encoding Info:    Redeclaring text symbol \texteightoldstyle (encoding TS1) on input line 102.
+LaTeX Encoding Info:    Redeclaring text symbol \textnineoldstyle (encoding TS1) on input line 103.
+LaTeX Encoding Info:    Redeclaring text symbol \textlangle (encoding TS1) on input line 104.
+LaTeX Encoding Info:    Redeclaring text symbol \textminus (encoding TS1) on input line 105.
+LaTeX Encoding Info:    Redeclaring text symbol \textrangle (encoding TS1) on input line 106.
+LaTeX Encoding Info:    Redeclaring text symbol \textmho (encoding TS1) on input line 107.
+LaTeX Encoding Info:    Redeclaring text symbol \textbigcircle (encoding TS1) on input line 108.
+LaTeX Encoding Info:    Redeclaring text command \textcircled (encoding TS1) on input line 109.
+LaTeX Encoding Info:    Redeclaring text symbol \textohm (encoding TS1) on input line 115.
+LaTeX Encoding Info:    Redeclaring text symbol \textlbrackdbl (encoding TS1) on input line 116.
+LaTeX Encoding Info:    Redeclaring text symbol \textrbrackdbl (encoding TS1) on input line 117.
+LaTeX Encoding Info:    Redeclaring text symbol \textuparrow (encoding TS1) on input line 118.
+LaTeX Encoding Info:    Redeclaring text symbol \textdownarrow (encoding TS1) on input line 119.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciigrave (encoding TS1) on input line 120.
+LaTeX Encoding Info:    Redeclaring text symbol \textborn (encoding TS1) on input line 121.
+LaTeX Encoding Info:    Redeclaring text symbol \textdivorced (encoding TS1) on input line 122.
+LaTeX Encoding Info:    Redeclaring text symbol \textdied (encoding TS1) on input line 123.
+LaTeX Encoding Info:    Redeclaring text symbol \textleaf (encoding TS1) on input line 124.
+LaTeX Encoding Info:    Redeclaring text symbol \textmarried (encoding TS1) on input line 125.
+LaTeX Encoding Info:    Redeclaring text symbol \textmusicalnote (encoding TS1) on input line 126.
+LaTeX Encoding Info:    Redeclaring text symbol \texttildelow (encoding TS1) on input line 127.
+LaTeX Encoding Info:    Redeclaring text symbol \textdblhyphenchar (encoding TS1) on input line 128.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciibreve (encoding TS1) on input line 129.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciicaron (encoding TS1) on input line 130.
+LaTeX Encoding Info:    Redeclaring text symbol \textacutedbl (encoding TS1) on input line 131.
+LaTeX Encoding Info:    Redeclaring text symbol \textgravedbl (encoding TS1) on input line 132.
+LaTeX Encoding Info:    Redeclaring text symbol \textdagger (encoding TS1) on input line 133.
+LaTeX Encoding Info:    Redeclaring text symbol \textdaggerdbl (encoding TS1) on input line 134.
+LaTeX Encoding Info:    Redeclaring text symbol \textbardbl (encoding TS1) on input line 135.
+LaTeX Encoding Info:    Redeclaring text symbol \textperthousand (encoding TS1) on input line 136.
+LaTeX Encoding Info:    Redeclaring text symbol \textbullet (encoding TS1) on input line 137.
+LaTeX Encoding Info:    Redeclaring text symbol \textcelsius (encoding TS1) on input line 138.
+LaTeX Encoding Info:    Redeclaring text symbol \textdollaroldstyle (encoding TS1) on input line 139.
+LaTeX Encoding Info:    Redeclaring text symbol \textcentoldstyle (encoding TS1) on input line 140.
+LaTeX Encoding Info:    Redeclaring text symbol \textflorin (encoding TS1) on input line 141.
+LaTeX Encoding Info:    Redeclaring text symbol \textcolonmonetary (encoding TS1) on input line 142.
+LaTeX Encoding Info:    Redeclaring text symbol \textwon (encoding TS1) on input line 143.
+LaTeX Encoding Info:    Redeclaring text symbol \textnaira (encoding TS1) on input line 144.
+LaTeX Encoding Info:    Redeclaring text symbol \textguarani (encoding TS1) on input line 145.
+LaTeX Encoding Info:    Redeclaring text symbol \textpeso (encoding TS1) on input line 146.
+LaTeX Encoding Info:    Redeclaring text symbol \textlira (encoding TS1) on input line 147.
+LaTeX Encoding Info:    Redeclaring text symbol \textrecipe (encoding TS1) on input line 148.
+LaTeX Encoding Info:    Redeclaring text symbol \textinterrobang (encoding TS1) on input line 149.
+LaTeX Encoding Info:    Redeclaring text symbol \textinterrobangdown (encoding TS1) on input line 150.
+LaTeX Encoding Info:    Redeclaring text symbol \textdong (encoding TS1) on input line 151.
+LaTeX Encoding Info:    Redeclaring text symbol \texttrademark (encoding TS1) on input line 152.
+LaTeX Encoding Info:    Redeclaring text symbol \textpertenthousand (encoding TS1) on input line 153.
+LaTeX Encoding Info:    Redeclaring text symbol \textpilcrow (encoding TS1) on input line 154.
+LaTeX Encoding Info:    Redeclaring text symbol \textbaht (encoding TS1) on input line 155.
+LaTeX Encoding Info:    Redeclaring text symbol \textnumero (encoding TS1) on input line 156.
+LaTeX Encoding Info:    Redeclaring text symbol \textdiscount (encoding TS1) on input line 157.
+LaTeX Encoding Info:    Redeclaring text symbol \textestimated (encoding TS1) on input line 158.
+LaTeX Encoding Info:    Redeclaring text symbol \textopenbullet (encoding TS1) on input line 159.
+LaTeX Encoding Info:    Redeclaring text symbol \textservicemark (encoding TS1) on input line 160.
+LaTeX Encoding Info:    Redeclaring text symbol \textlquill (encoding TS1) on input line 161.
+LaTeX Encoding Info:    Redeclaring text symbol \textrquill (encoding TS1) on input line 162.
+LaTeX Encoding Info:    Redeclaring text symbol \textcent (encoding TS1) on input line 163.
+LaTeX Encoding Info:    Redeclaring text symbol \textsterling (encoding TS1) on input line 164.
+LaTeX Encoding Info:    Redeclaring text symbol \textcurrency (encoding TS1) on input line 165.
+LaTeX Encoding Info:    Redeclaring text symbol \textyen (encoding TS1) on input line 166.
+LaTeX Encoding Info:    Redeclaring text symbol \textbrokenbar (encoding TS1) on input line 167.
+LaTeX Encoding Info:    Redeclaring text symbol \textsection (encoding TS1) on input line 168.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciidieresis (encoding TS1) on input line 169.
+LaTeX Encoding Info:    Redeclaring text symbol \textcopyright (encoding TS1) on input line 170.
+LaTeX Encoding Info:    Redeclaring text symbol \textordfeminine (encoding TS1) on input line 171.
+LaTeX Encoding Info:    Redeclaring text symbol \textcopyleft (encoding TS1) on input line 172.
+LaTeX Encoding Info:    Redeclaring text symbol \textlnot (encoding TS1) on input line 173.
+LaTeX Encoding Info:    Redeclaring text symbol \textcircledP (encoding TS1) on input line 174.
+LaTeX Encoding Info:    Redeclaring text symbol \textregistered (encoding TS1) on input line 175.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciimacron (encoding TS1) on input line 176.
+LaTeX Encoding Info:    Redeclaring text symbol \textdegree (encoding TS1) on input line 177.
+LaTeX Encoding Info:    Redeclaring text symbol \textpm (encoding TS1) on input line 178.
+LaTeX Encoding Info:    Redeclaring text symbol \texttwosuperior (encoding TS1) on input line 179.
+LaTeX Encoding Info:    Redeclaring text symbol \textthreesuperior (encoding TS1) on input line 180.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciiacute (encoding TS1) on input line 181.
+LaTeX Encoding Info:    Redeclaring text symbol \textmu (encoding TS1) on input line 182.
+LaTeX Encoding Info:    Redeclaring text symbol \textparagraph (encoding TS1) on input line 183.
+LaTeX Encoding Info:    Redeclaring text symbol \textperiodcentered (encoding TS1) on input line 184.
+LaTeX Encoding Info:    Redeclaring text symbol \textreferencemark (encoding TS1) on input line 185.
+LaTeX Encoding Info:    Redeclaring text symbol \textonesuperior (encoding TS1) on input line 186.
+LaTeX Encoding Info:    Redeclaring text symbol \textordmasculine (encoding TS1) on input line 187.
+LaTeX Encoding Info:    Redeclaring text symbol \textsurd (encoding TS1) on input line 188.
+LaTeX Encoding Info:    Redeclaring text symbol \textonequarter (encoding TS1) on input line 189.
+LaTeX Encoding Info:    Redeclaring text symbol \textonehalf (encoding TS1) on input line 190.
+LaTeX Encoding Info:    Redeclaring text symbol \textthreequarters (encoding TS1) on input line 191.
+LaTeX Encoding Info:    Redeclaring text symbol \texteuro (encoding TS1) on input line 192.
+LaTeX Encoding Info:    Redeclaring text symbol \texttimes (encoding TS1) on input line 193.
+LaTeX Encoding Info:    Redeclaring text symbol \textdiv (encoding TS1) on input line 194.
+))
+\l__ctex_tmp_int=\count284
+\l__ctex_tmp_box=\box53
+\l__ctex_tmp_dim=\dimen149
+\g__ctex_section_depth_int=\count285
+\g__ctex_font_size_int=\count286
+ (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
+File: ctexopts.cfg 2022/07/14 v2.5.10 Option configuration file (CTEX)
+)
+
+Package ctex Warning: UTF8 will be used as the default encoding.
+
+(d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/ctex/engine/ctex-engine-pdftex.def
+File: ctex-engine-pdftex.def 2022/07/14 v2.5.10 (pdf)LaTeX adapter (CTEX)
+ (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/cjk/texinput/CJKutf8.sty
+Package: CJKutf8 2021/10/16 4.8.5
+ (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+ (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/cjk/texinput/CJK.sty
+Package: CJK 2021/10/16 4.8.5
+ (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/cjk/texinput/mule/MULEenc.sty
+Package: MULEenc 2021/10/16 4.8.5
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/cjk/texinput/CJK.enc
+File: CJK.enc 2021/10/16 4.8.5
+Now handling font encoding C00 ...
+... no UTF-8 mapping file for font encoding C00
+Now handling font encoding C05 ...
+... no UTF-8 mapping file for font encoding C05
+Now handling font encoding C09 ...
+... no UTF-8 mapping file for font encoding C09
+Now handling font encoding C10 ...
+... no UTF-8 mapping file for font encoding C10
+Now handling font encoding C20 ...
+... no UTF-8 mapping file for font encoding C20
+Now handling font encoding C19 ...
+... no UTF-8 mapping file for font encoding C19
+Now handling font encoding C40 ...
+... no UTF-8 mapping file for font encoding C40
+Now handling font encoding C42 ...
+... no UTF-8 mapping file for font encoding C42
+Now handling font encoding C43 ...
+... no UTF-8 mapping file for font encoding C43
+Now handling font encoding C50 ...
+... no UTF-8 mapping file for font encoding C50
+Now handling font encoding C52 ...
+... no UTF-8 mapping file for font encoding C52
+Now handling font encoding C49 ...
+... no UTF-8 mapping file for font encoding C49
+Now handling font encoding C60 ...
+... no UTF-8 mapping file for font encoding C60
+Now handling font encoding C61 ...
+... no UTF-8 mapping file for font encoding C61
+Now handling font encoding C63 ...
+... no UTF-8 mapping file for font encoding C63
+Now handling font encoding C64 ...
+... no UTF-8 mapping file for font encoding C64
+Now handling font encoding C65 ...
+... no UTF-8 mapping file for font encoding C65
+Now handling font encoding C70 ...
+... no UTF-8 mapping file for font encoding C70
+Now handling font encoding C31 ...
+... no UTF-8 mapping file for font encoding C31
+Now handling font encoding C32 ...
+... no UTF-8 mapping file for font encoding C32
+Now handling font encoding C33 ...
+... no UTF-8 mapping file for font encoding C33
+Now handling font encoding C34 ...
+... no UTF-8 mapping file for font encoding C34
+Now handling font encoding C35 ...
+... no UTF-8 mapping file for font encoding C35
+Now handling font encoding C36 ...
+... no UTF-8 mapping file for font encoding C36
+Now handling font encoding C37 ...
+... no UTF-8 mapping file for font encoding C37
+Now handling font encoding C80 ...
+... no UTF-8 mapping file for font encoding C80
+Now handling font encoding C81 ...
+... no UTF-8 mapping file for font encoding C81
+Now handling font encoding C01 ...
+... no UTF-8 mapping file for font encoding C01
+Now handling font encoding C11 ...
+... no UTF-8 mapping file for font encoding C11
+Now handling font encoding C21 ...
+... no UTF-8 mapping file for font encoding C21
+Now handling font encoding C41 ...
+... no UTF-8 mapping file for font encoding C41
+Now handling font encoding C62 ...
+... no UTF-8 mapping file for font encoding C62
+)
+\CJK@indent=\box54
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+)) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/cjkpunct/CJKpunct.sty
+Package: CJKpunct 2016/05/14 4.8.4
+\CJKpunct@cnta=\count287
+\CJKpunct@cntb=\count288
+\CJKpunct@cntc=\count289
+\CJKpunct@cntd=\count290
+\CJKpunct@cnte=\count291
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2026 (decimal 8230)
+ (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/cjkpunct/CJKpunct.spa)) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/cjk/texinput/CJKspace.sty
+Package: CJKspace 2021/10/16 3.8.0
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
+File: UTF8.bdg 2021/10/16 4.8.5
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/ctex/ctexspa.def
+File: ctexspa.def 2022/07/14 v2.5.10 Space info for CJKpunct (CTEX)
+)
+\ccwd=\dimen150
+\l__ctex_ccglue_skip=\skip51
+)
+\l__ctex_ziju_dim=\dimen151
+ (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/zhnumber/zhnumber.sty
+Package: zhnumber 2022/07/14 v3.0 Typesetting numbers with Chinese glyphs
+\l__zhnum_scale_int=\count292
+\l__zhnum_tmp_int=\count293
+ (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg
+File: zhnumber-utf8.cfg 2022/07/14 v3.0 Chinese numerals with UTF8 encoding
+)) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese.def
+File: ctex-scheme-chinese.def 2022/07/14 v2.5.10 Chinese scheme for generic (CTEX)
+ (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg
+File: ctex-name-utf8.cfg 2022/07/14 v2.5.10 Caption with encoding UTF-8 (CTEX)
+)) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-windows.def
+File: ctex-fontset-windows.def 2022/07/14 v2.5.10 Windows fonts definition (CTEX)
+)) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/ctex/config/ctex.cfg
+File: ctex.cfg 2022/07/14 v2.5.10 Configuration file (CTEX)
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+ (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count294
+\Gm@cntv=\count295
+\c@Gm@tempcnt=\count296
+\Gm@bindingoffset=\dimen152
+\Gm@wd@mp=\dimen153
+\Gm@odd@mp=\dimen154
+\Gm@even@mp=\dimen155
+\Gm@layoutwidth=\dimen156
+\Gm@layoutheight=\dimen157
+\Gm@layouthoffset=\dimen158
+\Gm@layoutvoffset=\dimen159
+\Gm@dimlist=\toks20
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen160
+\Gin@req@width=\dimen161
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen162
+\lightrulewidth=\dimen163
+\cmidrulewidth=\dimen164
+\belowrulesep=\dimen165
+\belowbottomsep=\dimen166
+\aboverulesep=\dimen167
+\abovetopsep=\dimen168
+\cmidrulesep=\dimen169
+\cmidrulekern=\dimen170
+\defaultaddspace=\dimen171
+\@cmidla=\count297
+\@cmidlb=\count298
+\@aboverulesep=\dimen172
+\@belowrulesep=\dimen173
+\@thisruleclass=\count299
+\@lastruleclass=\count300
+\@thisrulewidth=\dimen174
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count301
+\lst@gtempboxa=\box55
+\lst@token=\toks21
+\lst@length=\count302
+\lst@currlwidth=\dimen175
+\lst@column=\count303
+\lst@pos=\count304
+\lst@lostspace=\dimen176
+\lst@width=\dimen177
+\lst@newlines=\count305
+\lst@lineno=\count306
+\lst@maxwidth=\dimen178
+ (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+\c@lstnumber=\count307
+\lst@skipnumbers=\count308
+\lst@framebox=\box56
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2025/11/14 1.11b listings configuration
+))
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
+
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11b (Carsten Heinz)
+    so I'm assuming it got fixed.
+(d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
+\LTleft=\skip52
+\LTright=\skip53
+\LTpre=\skip54
+\LTpost=\skip55
+\LTchunksize=\count309
+\LTcapwidth=\dimen179
+\LT@head=\box57
+\LT@firsthead=\box58
+\LT@foot=\box59
+\LT@lastfoot=\box60
+\LT@gbox=\box61
+\LT@cols=\count310
+\LT@rows=\count311
+\c@LT@tables=\count312
+\c@LT@chunks=\count313
+\LT@p@ftn=\toks22
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip56
+\multirow@cntb=\count314
+\multirow@dima=\skip57
+\bigstrutjot=\dimen180
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+ (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/tools/array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen181
+\ar@mcellbox=\box62
+\extrarowheight=\dimen182
+\NC@list=\toks23
+\extratabsurround=\skip58
+\backup@length=\skip59
+\ar@cellbox=\box63
+)
+\rotheadsize=\dimen183
+\c@nlinenum=\count315
+\TeXr@lab=\toks24
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+) (./设计文档.aux)
+\openout1 = `设计文档.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=674.33032pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-23.91173pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count316
+\scratchdimen=\dimen184
+\scratchbox=\box64
+\nofMPsegments=\count317
+\nofMParguments=\count318
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count319
+\MPscratchDim=\dimen185
+\MPnumerator=\count320
+\makeMPintoPDFobject=\count321
+\everyMPtoPDFconversion=\toks26
+) (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+\c@lstlisting=\count322
+LaTeX Font Info:    Trying to load font information for C70+rm on input line 21.
+ (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/ctex/fd/c70rm.fd
+File: c70rm.fd 2022/07/14 v2.5.10 Chinese font definition (CTEX)
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 21.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 21.
+ (./设计文档.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
+Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (quanjiao) on input line 15.
+ (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/generic/ctex/zhmap/ctex-zhmap-windows.tex
+File: ctex-zhmap-windows.tex 2022/07/14 v2.5.10 Windows font map loader for pdfTeX and DVIPDFMx (CTEX)
+{d:/program/latex/TexLive/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{UGBK.sfd}{Unicode.sfd}) [1
+
+] [2] [3]
+./设计文档.toc:103: Missing $ inserted.
+<inserted text> 
+                $
+l.103 ....2.1}8.2.1 用户表（sys_user）}{34}{}
+                                                  %
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./设计文档.toc:103: Extra }, or forgotten $.
+<recently read> }
+                 
+l.103 ....2.1}8.2.1 用户表（sys_user）}{34}{}
+                                                  %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./设计文档.toc:103: Missing $ inserted.
+<inserted text> 
+                $
+l.103 ....2.1}8.2.1 用户表（sys_user）}{34}{}
+                                                  %
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./设计文档.toc:104: Missing $ inserted.
+<inserted text> 
+                $
+l.104 ...2.2}8.2.2 图书表（book_info）}{34}{}
+                                                  %
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./设计文档.toc:104: Extra }, or forgotten $.
+<recently read> }
+                 
+l.104 ...2.2}8.2.2 图书表（book_info）}{34}{}
+                                                  %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./设计文档.toc:104: Missing $ inserted.
+<inserted text> 
+                $
+l.104 ...2.2}8.2.2 图书表（book_info）}{34}{}
+                                                  %
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./设计文档.toc:105: Missing $ inserted.
+<inserted text> 
+                $
+l.105 ...借阅记录表（borrow_record）}{35}{}
+                                                  %
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./设计文档.toc:105: Extra }, or forgotten $.
+<recently read> }
+                 
+l.105 ...借阅记录表（borrow_record）}{35}{}
+                                                  %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./设计文档.toc:105: Missing $ inserted.
+<inserted text> 
+                $
+l.105 ...借阅记录表（borrow_record）}{35}{}
+                                                  %
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./设计文档.toc:106: Missing $ inserted.
+<inserted text> 
+                $
+l.106 ....4 系统配置表（sys_config）}{35}{}
+                                                  %
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./设计文档.toc:106: Extra }, or forgotten $.
+<recently read> }
+                 
+l.106 ....4 系统配置表（sys_config）}{35}{}
+                                                  %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./设计文档.toc:106: Missing $ inserted.
+<inserted text> 
+                $
+l.106 ....4 系统配置表（sys_config）}{35}{}
+                                                  %
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./设计文档.toc:107: Missing $ inserted.
+<inserted text> 
+                $
+l.107 ...��日志表（sys_operation_log）}{35}{}
+                                                  %
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./设计文档.toc:107: Extra }, or forgotten $.
+<recently read> }
+                 
+l.107 ...��日志表（sys_operation_log）}{35}{}
+                                                  %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./设计文档.toc:107: Missing $ inserted.
+<inserted text> 
+                $
+l.107 ...��日志表（sys_operation_log）}{35}{}
+                                                  %
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[4] [5])
+\tf@toc=\write3
+\openout3 = `设计文档.toc'.
+
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:22: Missing } inserted.
+<inserted text> 
+                }
+l.22 \tableofcontents
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:22: Missing } inserted.
+<inserted text> 
+                }
+l.22 \tableofcontents
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:22: Missing } inserted.
+<inserted text> 
+                }
+l.22 \tableofcontents
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:22: Missing } inserted.
+<inserted text> 
+                }
+l.22 \tableofcontents
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:22: Missing } inserted.
+<inserted text> 
+                }
+l.22 \tableofcontents
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[6]
+Overfull \hbox (5.85146pt too wide) in paragraph at lines 39--58
+ [][] 
+ []
+
+
+Overfull \hbox (554.75592pt too wide) in paragraph at lines 68--81
+ [][] 
+ []
+
+[7]
+Overfull \hbox (734.2317pt too wide) in paragraph at lines 144--159
+ [][] 
+ []
+
+
+Overfull \hbox (600.92642pt too wide) in paragraph at lines 165--178
+ [][] 
+ []
+
+[8]
+Overfull \hbox (681.03087pt too wide) in paragraph at lines 184--195
+ [][] 
+ []
+
+
+Overfull \hbox (567.15593pt too wide) in paragraph at lines 201--210
+ [][] 
+ []
+
+[9{d:/program/latex/TexLive/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Overfull \hbox (37.31012pt too wide) in paragraph at lines 258--265
+ [][] 
+ []
+
+
+Overfull \hbox (6.88191pt too wide) in paragraph at lines 273--274
+[]\OT1/cmr/m/n/12 3. \C70/rm/m/n/12/4e � \C70/rm/m/n/12/51 e \C70/rm/m/n/12/53 �\OT1/cmr/m/n/12 imageCodeToken\C70/rm/m/n/12/4e :\OT1/cmr/m/n/12 key|\C70/rm/m/n/12/ff ^^L| \OT1/cmr/m/n/12 codeText\C70/rm/m/n/12/4e :\OT1/cmr/m/n/12 value|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/5b X \C70/rm/m/n/12/51 e\OT1/cmr/m/n/12 Redis|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/8b � \C70/rm/m/n/12/7f n \C70/rm/m/n/12/8f � \C70/rm/m/n/12/67 ^^_ \C70/rm/m/n/12/65 � \C70/rm/m/n/12/95 �\OT1/cmr/m/n/12 300\C70/rm/m/n/12/79 � 
+ []
+
+[10] [11]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 415.
+ (d:/program/latex/TexLive/texlive/2026/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 415.
+ [12] [13] [14] [15]
+Overfull \hbox (6.72736pt too wide) in paragraph at lines 632--633
+[]\OT1/cmr/m/n/12 3. ISBN\C70/rm/m/n/12/55 / \C70/rm/m/n/12/4e ^^@ \C70/rm/m/n/12/60 ' \C70/rm/m/n/12/68 ! \C70/rm/m/n/12/9a �|\C70/rm/m/n/12/ff ^^Z| \C70/rm/m/n/12/67 � \C70/rm/m/n/12/8b � \C70/rm/m/n/12/65 p \C70/rm/m/n/12/63 n \C70/rm/m/n/12/5e � \C70/rm/m/n/12/66 / \C70/rm/m/n/12/54 & \C70/rm/m/n/12/5b X \C70/rm/m/n/12/57 ( \C70/rm/m/n/12/8b �\OT1/cmr/m/n/12 ISBN\C70/rm/m/n/12/76 � \C70/rm/m/n/12/56 � \C70/rm/m/n/12/4e f|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/5d � \C70/rm/m/n/12/5b X \C70/rm/m/n/12/57 ( \C70/rm/m/n/12/8f � \C70/rm/m/n/12/56 � \C70/rm/m/n/12/95 ^^Y \C70/rm/m/n/12/8b � \C70/rm/m/n/12/78 ^^A\OT1/cmr/m/n/12 20001|\C70/rm/m/n/12/ff ^^L|
+ []
+
+[16] [17] [18]
+Overfull \hbox (55.87274pt too wide) in paragraph at lines 960--961
+[]\OT1/cmr/m/n/12 2. \C70/rm/m/n/12/51 e \C70/rm/m/n/12/53 � \C70/rm/m/n/12/54 ^^H \C70/rm/m/n/12/6c � \C70/rm/m/n/12/60 ' \C70/rm/m/n/12/68 ! \C70/rm/m/n/12/9a �|\C70/rm/m/n/12/ff ^^Z| \OT1/cmr/m/n/12 queryType\C70/rm/m/n/12/4e ^^M \C70/rm/m/n/12/57 ( \C70/rm/m/n/12/63 ^^G \C70/rm/m/n/12/5b � \C70/rm/m/n/12/83 ^^C \C70/rm/m/n/12/56 � \C70/rm/m/n/12/8f � \C70/rm/m/n/12/56 � \C70/rm/m/n/12/53 � \C70/rm/m/n/12/65 p \C70/rm/m/n/12/95 ^^Y \C70/rm/m/n/12/8b �|\C70/rm/m/n/12/ff ^^L| \OT1/cmr/m/n/12 borrower\C70/rm/m/n/12/67 � \C70/rm/m/n/12/8b � \C70/rm/m/n/12/65 �\OT1/cmr/m/n/12 borrowerName\C70/rm/m/n/12/4e :
+ []
+
+[19] [20]
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1081: Undefined control sequence.
+<recently read> \n 
+                   
+l.1081         class Book:\\\n
+                                          """图书实体类，封装图书�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1082: Missing $ inserted.
+<inserted text> 
+                $
+l.1082             def _
+                        _init__(\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1082: Missing { inserted.
+<to be read again> 
+                   _
+l.1082             def __
+                         init__(\\
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1082: Missing { inserted.
+<to be read again> 
+                   _
+l.1082             def __init__
+                               (\\
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1083: Missing } inserted.
+<inserted text> 
+                }
+l.1083                 s
+                        elf,\\
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1083: Missing } inserted.
+<inserted text> 
+                }
+l.1083                 s
+                        elf,\\
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1083: Missing $ inserted.
+<inserted text> 
+                $
+l.1083                 s
+                        elf,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1086: Missing $ inserted.
+<inserted text> 
+                $
+l.1086                 book_
+                            name: str,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1087: Missing $ inserted.
+<inserted text> 
+                $
+l.1087                 a
+                        uthor: str,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1090: Missing $ inserted.
+<inserted text> 
+                $
+l.1090                 total_
+                             count: int = 0,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1091: Missing $ inserted.
+<inserted text> 
+                $
+l.1091                 c
+                        reate_time: Optional[datetime] = None,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1091: Missing $ inserted.
+<inserted text> 
+                $
+l.1091                 create_
+                              time: Optional[datetime] = None,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1092: Missing $ inserted.
+<inserted text> 
+                $
+l.1092                 u
+                        pdate_time: Optional[datetime] = None\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1092: Missing $ inserted.
+<inserted text> 
+                $
+l.1092                 update_
+                              time: Optional[datetime] = None\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1093: Missing $ inserted.
+<inserted text> 
+                $
+l.1093             )
+                    :\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1096: Missing $ inserted.
+<inserted text> 
+                $
+l.1096                 self.book_
+                                 name = book_name  书名\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1103: Missing $ inserted.
+<inserted text> 
+                $
+l.1103             \\
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1104: Missing $ inserted.
+<inserted text> 
+                $
+l.1104             def is_
+                          available(self) -> bool:\\\n                """判...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1104: Missing $ inserted.
+<inserted text> 
+                $
+l.1104 ...     def is_available(self) -> bool:\\\n
+                                                                  """判断�...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1104: Undefined control sequence.
+<recently read> \n 
+                   
+l.1104 ...     def is_available(self) -> bool:\\\n
+                                                                  """判断�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1107: Missing $ inserted.
+<inserted text> 
+                $
+l.1107             def decrease_
+                                stock(self) -> bool:\\\n                """�...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1107: Missing $ inserted.
+<inserted text> 
+                $
+l.1107 ...   def decrease_stock(self) -> bool:\\\n
+                                                                  """扣减�...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1107: Undefined control sequence.
+<recently read> \n 
+                   
+l.1107 ...   def decrease_stock(self) -> bool:\\\n
+                                                                  """扣减�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1108: Undefined control sequence.
+<recently read> \n 
+                   
+l.1108                 if self.stock <= 0:\\\n
+                                                                  return Fal...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1110: Missing $ inserted.
+<inserted text> 
+                $
+l.1110                 self.update_
+                                   time = datetime.now()\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1111: Missing $ inserted.
+<inserted text> 
+                $
+l.1111                 r
+                        eturn True\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1113: Missing $ inserted.
+<inserted text> 
+                $
+l.1113             def increase_
+                                stock(self) -> None:\\\n                """�...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1113: Missing $ inserted.
+<inserted text> 
+                $
+l.1113 ...   def increase_stock(self) -> None:\\\n
+                                                                  """增加�...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1113: Undefined control sequence.
+<recently read> \n 
+                   
+l.1113 ...   def increase_stock(self) -> None:\\\n
+                                                                  """增加�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1115: Missing $ inserted.
+<inserted text> 
+                $
+l.1115                 self.update_
+                                   time = datetime.now() \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1116: Missing $ inserted.
+<inserted text> 
+                $
+l.1116         \hline
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (1156.20975pt too wide) in paragraph at lines 1075--1118
+ [][] 
+ []
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1130: Undefined control sequence.
+<recently read> \n 
+                   
+l.1130         class BorrowRecord:\\\n
+                                                  """借阅记录实体类�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1131: Missing $ inserted.
+<inserted text> 
+                $
+l.1131             def _
+                        _init__(\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1131: Missing { inserted.
+<to be read again> 
+                   _
+l.1131             def __
+                         init__(\\
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1131: Missing { inserted.
+<to be read again> 
+                   _
+l.1131             def __init__
+                               (\\
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1132: Missing } inserted.
+<inserted text> 
+                }
+l.1132                 s
+                        elf,\\
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1132: Missing } inserted.
+<inserted text> 
+                }
+l.1132                 s
+                        elf,\\
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1132: Missing $ inserted.
+<inserted text> 
+                $
+l.1132                 s
+                        elf,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1135: Missing $ inserted.
+<inserted text> 
+                $
+l.1135                 book_
+                            name: str,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1136: Missing $ inserted.
+<inserted text> 
+                $
+l.1136                 b
+                        orrower_name: str,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1136: Missing $ inserted.
+<inserted text> 
+                $
+l.1136                 borrower_
+                                name: str,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1137: Missing $ inserted.
+<inserted text> 
+                $
+l.1137                 b
+                        orrower_phone: Optional[str] = None,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1137: Missing $ inserted.
+<inserted text> 
+                $
+l.1137                 borrower_
+                                phone: Optional[str] = None,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1138: Missing $ inserted.
+<inserted text> 
+                $
+l.1138                 b
+                        orrow_time: Optional[datetime] = None,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1138: Missing $ inserted.
+<inserted text> 
+                $
+l.1138                 borrow_
+                              time: Optional[datetime] = None,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1139: Missing $ inserted.
+<inserted text> 
+                $
+l.1139                 r
+                        eturn_time: Optional[datetime] = None,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1139: Missing $ inserted.
+<inserted text> 
+                $
+l.1139                 return_
+                              time: Optional[datetime] = None,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1140: Missing $ inserted.
+<inserted text> 
+                $
+l.1140                 s
+                        tatus: str = "未归还"\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1144: Missing $ inserted.
+<inserted text> 
+                $
+l.1144                 self.book_
+                                 name = book_name  书名\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1150: Missing $ inserted.
+<inserted text> 
+                $
+l.1150             \\
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1151: Missing $ inserted.
+<inserted text> 
+                $
+l.1151             def is_
+                          unreturned(self) -> bool:\\\n                """�...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1151: Missing $ inserted.
+<inserted text> 
+                $
+l.1151 ...    def is_unreturned(self) -> bool:\\\n
+                                                                  """判断�...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1151: Undefined control sequence.
+<recently read> \n 
+                   
+l.1151 ...    def is_unreturned(self) -> bool:\\\n
+                                                                  """判断�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1154: Missing $ inserted.
+<inserted text> 
+                $
+l.1154             def complete_
+                                return(self) -> None:\\\n                """...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1154: Missing $ inserted.
+<inserted text> 
+                $
+l.1154 ...  def complete_return(self) -> None:\\\n
+                                                                  """完成�...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1154: Undefined control sequence.
+<recently read> \n 
+                   
+l.1154 ...  def complete_return(self) -> None:\\\n
+                                                                  """完成�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1156: Missing $ inserted.
+<inserted text> 
+                $
+l.1156                 self.return_
+                                   time = datetime.now() \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1157: Missing $ inserted.
+<inserted text> 
+                $
+l.1157         \hline
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (1097.0208pt too wide) in paragraph at lines 1124--1159
+ [][] 
+ []
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1171: Undefined control sequence.
+<recently read> \n 
+                   
+l.1171         class User:\\\n
+                                          """用户实体类，封装系统�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1172: Missing $ inserted.
+<inserted text> 
+                $
+l.1172             def _
+                        _init__(\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1172: Missing { inserted.
+<to be read again> 
+                   _
+l.1172             def __
+                         init__(\\
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1172: Missing { inserted.
+<to be read again> 
+                   _
+l.1172             def __init__
+                               (\\
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1173: Missing } inserted.
+<inserted text> 
+                }
+l.1173                 s
+                        elf,\\
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1173: Missing } inserted.
+<inserted text> 
+                }
+l.1173                 s
+                        elf,\\
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1173: Missing $ inserted.
+<inserted text> 
+                $
+l.1173                 s
+                        elf,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1175: Missing $ inserted.
+<inserted text> 
+                $
+l.1175                 login_
+                             name: str,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1176: Missing $ inserted.
+<inserted text> 
+                $
+l.1176                 p
+                        assword: str,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1177: Missing $ inserted.
+<inserted text> 
+                $
+l.1177                 real_
+                            name: str,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1178: Missing $ inserted.
+<inserted text> 
+                $
+l.1178                 r
+                        ole: str,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1179: Missing $ inserted.
+<inserted text> 
+                $
+l.1179                 create_
+                              time: Optional[datetime] = None,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1180: Missing $ inserted.
+<inserted text> 
+                $
+l.1180                 u
+                        pdate_time: Optional[datetime] = None\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1180: Missing $ inserted.
+<inserted text> 
+                $
+l.1180                 update_
+                              time: Optional[datetime] = None\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1181: Missing $ inserted.
+<inserted text> 
+                $
+l.1181             )
+                    :\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1183: Missing $ inserted.
+<inserted text> 
+                $
+l.1183                 self.login_
+                                  name = login_name  登录用户名，唯一\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1189: Missing $ inserted.
+<inserted text> 
+                $
+l.1189             \\
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1190: Missing $ inserted.
+<inserted text> 
+                $
+l.1190             def has_
+                           book_manage_permission(self) -> bool:\\\n        ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1190: Missing $ inserted.
+<inserted text> 
+                $
+l.1190 ...ook_manage_permission(self) -> bool:\\\n
+                                                                  """判断�...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1190: Undefined control sequence.
+<recently read> \n 
+                   
+l.1190 ...ook_manage_permission(self) -> bool:\\\n
+                                                                  """判断�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1193: Missing $ inserted.
+<inserted text> 
+                $
+l.1193             def has_
+                           system_manage_permission(self) -> bool:\\\n      ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1193: Missing $ inserted.
+<inserted text> 
+                $
+l.1193 ...tem_manage_permission(self) -> bool:\\\n
+                                                                  """判断�...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1193: Undefined control sequence.
+<recently read> \n 
+                   
+l.1193 ...tem_manage_permission(self) -> bool:\\\n
+                                                                  """判断�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (932.4777pt too wide) in paragraph at lines 1165--1197
+ [][] 
+ []
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1217: Missing $ inserted.
+<inserted text> 
+                $
+l.1217             def _
+                        _init__(self, db_path: str = "library.db"):\\\n     ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1217: Missing { inserted.
+<to be read again> 
+                   _
+l.1217             def __
+                         init__(self, db_path: str = "library.db"):\\\n     ...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1217: Missing { inserted.
+<to be read again> 
+                   _
+l.1217             def __init__
+                               (self, db_path: str = "library.db"):\\\n     ...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1217: Missing } inserted.
+<inserted text> 
+                }
+l.1217 ...(self, db_path: str = "library.db"):\\\n
+                                                                  self.db_pa...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1217: Missing } inserted.
+<inserted text> 
+                }
+l.1217 ...(self, db_path: str = "library.db"):\\\n
+                                                                  self.db_pa...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1217: Missing $ inserted.
+<inserted text> 
+                $
+l.1217 ...(self, db_path: str = "library.db"):\\\n
+                                                                  self.db_pa...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1217: Undefined control sequence.
+<recently read> \n 
+                   
+l.1217 ...(self, db_path: str = "library.db"):\\\n
+                                                                  self.db_pa...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1217: Missing $ inserted.
+<inserted text> 
+                $
+l.1217 ...ibrary.db"):\\\n                self.db_
+                                                  path = db_path\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1218: Missing $ inserted.
+<inserted text> 
+                $
+l.1218             \\
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1219: Missing $ inserted.
+<inserted text> 
+                $
+l.1219             def _
+                        get_connection(self) -> sqlite3.Connection:\\\n     ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1219: Missing $ inserted.
+<inserted text> 
+                $
+l.1219 ...nection(self) -> sqlite3.Connection:\\\n
+                                                                  """获取�...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1219: Undefined control sequence.
+<recently read> \n 
+                   
+l.1219 ...nection(self) -> sqlite3.Connection:\\\n
+                                                                  """获取�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1220: Missing $ inserted.
+<inserted text> 
+                $
+l.1220 ...         return sqlite3.connect(self.db_
+                                                  path)\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1221: Missing $ inserted.
+<inserted text> 
+                $
+l.1221             \\
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1222: Undefined control sequence.
+<recently read> \n 
+                   
+l.1222 ...def insert(self, entity: T) -> bool:\\\n
+                                                                  """新增�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1225: Undefined control sequence.
+<recently read> \n 
+                   
+l.1225 ...def update(self, entity: T) -> bool:\\\n
+                                                                  """更新�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1228: Missing $ inserted.
+<inserted text> 
+                $
+l.1228             def delete_
+                              by_id(self, id: str) -> bool:\\\n             ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1228: Missing $ inserted.
+<inserted text> 
+                $
+l.1228 ...delete_by_id(self, id: str) -> bool:\\\n
+                                                                  """根据I...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1228: Undefined control sequence.
+<recently read> \n 
+                   
+l.1228 ...delete_by_id(self, id: str) -> bool:\\\n
+                                                                  """根据I...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1229: Missing $ inserted.
+<inserted text> 
+                $
+l.1229 ...ImplementedError("子类需实现delete_
+                                                  by_id方法")\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1230: Missing $ inserted.
+<inserted text> 
+                $
+l.1230             \\
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1231: Missing $ inserted.
+<inserted text> 
+                $
+l.1231             def select_
+                              by_id(self, id: str) -> Optional[T]:\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1232: Missing $ inserted.
+<inserted text> 
+                $
+l.1232                 "
+                        ""根据ID查询数据"""\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1233: Missing $ inserted.
+<inserted text> 
+                $
+l.1233 ...ImplementedError("子类需实现select_
+                                                  by_id方法")\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1234: Missing $ inserted.
+<inserted text> 
+                $
+l.1234             \\
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1235: Missing $ inserted.
+<inserted text> 
+                $
+l.1235             def select_
+                              all(self) -> List[T]:\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1236: Missing $ inserted.
+<inserted text> 
+                $
+l.1236                 "
+                        ""查询全量数据"""\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1237: Missing $ inserted.
+<inserted text> 
+                $
+l.1237 ...ImplementedError("子类需实现select_
+                                                  all方法") \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1238: Missing $ inserted.
+<inserted text> 
+                $
+l.1238         \hline
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+[21] [22] [23] [24] [25]
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1267: Undefined control sequence.
+<recently read> \n 
+                   
+l.1267         class StockRule:\\\n
+                                               """库存规则校验类，�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1270: Missing $ inserted.
+<inserted text> 
+                $
+l.1270             def validate_
+                                borrow_stock(book: Book) -> tuple[bool, str]:\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1271: Missing $ inserted.
+<inserted text> 
+                $
+l.1271                 "
+                        ""\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1276: Undefined control sequence.
+<recently read> \n 
+                   
+l.1276                 if not book:\\\n
+                                                           return False, "�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1277: Missing $ inserted.
+<inserted text> 
+                $
+l.1277                 if not book.is_
+                                      available():\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1278: Missing $ inserted.
+<inserted text> 
+                $
+l.1278                     r
+                            eturn False, "图书无可用库存，无法借�...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1279: Undefined control sequence.
+<recently read> \n 
+                   
+l.1279                 if book.stock < 0:\\\n
+                                                                 return Fals...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1283: Missing $ inserted.
+<inserted text> 
+                $
+l.1283             def validate_
+                                stock_number(stock: int, total_count: int) -...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1284: Missing $ inserted.
+<inserted text> 
+                $
+l.1284                 "
+                        ""\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1287: Missing $ inserted.
+<inserted text> 
+                $
+l.1287                 :param total_
+                                    count: 总馆藏数量\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1288: Missing $ inserted.
+<inserted text> 
+                $
+l.1288                 :
+                        return: (校验结果, 提示信息)\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1290: Undefined control sequence.
+<recently read> \n 
+                   
+l.1290                 if stock < 0:\\\n
+                                                            return False, "�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1291: Missing $ inserted.
+<inserted text> 
+                $
+l.1291                 if total_
+                                count < 0:\\\n                    return Fal...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1291: Missing $ inserted.
+<inserted text> 
+                $
+l.1291                 if total_count < 0:\\\n
+                                                                  return Fal...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1291: Undefined control sequence.
+<recently read> \n 
+                   
+l.1291                 if total_count < 0:\\\n
+                                                                  return Fal...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1292: Missing $ inserted.
+<inserted text> 
+                $
+l.1292                 if stock > total_
+                                        count:\\\n                    return...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1292: Missing $ inserted.
+<inserted text> 
+                $
+l.1292                 if stock > total_count:\\\n
+                                                                      return...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1292: Undefined control sequence.
+<recently read> \n 
+                   
+l.1292                 if stock > total_count:\\\n
+                                                                      return...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1307: Undefined control sequence.
+<recently read> \n 
+                   
+l.1307         class BorrowRule:\\\n
+                                                """借阅规则校验类，�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1310: Missing $ inserted.
+<inserted text> 
+                $
+l.1310             def validate_
+                                return_record(record: BorrowRecord) -> tuple...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1311: Missing $ inserted.
+<inserted text> 
+                $
+l.1311                 "
+                        ""\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1316: Undefined control sequence.
+<recently read> \n 
+                   
+l.1316                 if not record:\\\n
+                                                             return False, "...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1317: Missing $ inserted.
+<inserted text> 
+                $
+l.1317                 if not record.is_
+                                        unreturned():\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1318: Missing $ inserted.
+<inserted text> 
+                $
+l.1318                     r
+                            eturn False, "该图书已完成归还，无需�...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1322: Missing $ inserted.
+<inserted text> 
+                $
+l.1322             def validate_
+                                delete_book_has_unreturned(records: list[Bor...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1323: Missing $ inserted.
+<inserted text> 
+                $
+l.1323                 "
+                        ""\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1328: Undefined control sequence.
+<recently read> \n 
+                   
+l.1328                 for record in records:\\\n
+                                                                     if reco...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1328: Missing $ inserted.
+<inserted text> 
+                $
+l.1328 ...ds:\\\n                    if record.is_
+                                                  unreturned():\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1329: Missing $ inserted.
+<inserted text> 
+                $
+l.1329                         r
+                                eturn False, "该图书存在未归还的借...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (8.3567pt too wide) in paragraph at lines 1302--1333
+ [][] 
+ []
+
+[26] [27] [28] [29] [30] [31] [32] [33]
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1575: Missing $ inserted.
+<inserted text> 
+                $
+l.1575 ...ubsection{8.2.1 用户表（sys_user）}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1575: Missing $ inserted.
+<inserted text> 
+                $
+l.1575 ...ubsection{8.2.1 用户表（sys_user）}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1585: Missing $ inserted.
+<inserted text> 
+                $
+l.1585         login_
+                     name & TEXT & 否 & 是 & 是 & 登录用户名 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1585: Missing $ inserted.
+<inserted text> 
+                $
+l.1585         login_name &
+                            TEXT & 否 & 是 & 是 & 登录用户名 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1589: Missing $ inserted.
+<inserted text> 
+                $
+l.1589         real_
+                    name & TEXT & 否 & 是 & 否 & 用户真实姓名 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1589: Missing $ inserted.
+<inserted text> 
+                $
+l.1589         real_name &
+                           TEXT & 否 & 是 & 否 & 用户真实姓名 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1593: Missing $ inserted.
+<inserted text> 
+                $
+l.1593         create_
+                      time & DATETIME & 否 & 是 & 否 & 创建时间 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1593: Missing $ inserted.
+<inserted text> 
+                $
+l.1593         create_time &
+                             DATETIME & 否 & 是 & 否 & 创建时间 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1595: Missing $ inserted.
+<inserted text> 
+                $
+l.1595         update_
+                      time & DATETIME & 否 & 是 & 否 & 更新时间 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1595: Missing $ inserted.
+<inserted text> 
+                $
+l.1595         update_time &
+                             DATETIME & 否 & 是 & 否 & 更新时间 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (66.6256pt too wide) in paragraph at lines 1579--1598
+ [][] 
+ []
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1600: Missing $ inserted.
+<inserted text> 
+                $
+l.1600 索引：login_
+                      name 唯一索引
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1601: Missing $ inserted.
+<inserted text> 
+                $
+l.1601 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1602: Missing $ inserted.
+<inserted text> 
+                $
+l.1602 ...bsection{8.2.2 图书表（book_info）}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1602: Missing $ inserted.
+<inserted text> 
+                $
+l.1602 ...bsection{8.2.2 图书表（book_info）}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1614: Missing $ inserted.
+<inserted text> 
+                $
+l.1614         book_
+                    name & TEXT & 否 & 是 & 否 & 书名 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1614: Missing $ inserted.
+<inserted text> 
+                $
+l.1614         book_name &
+                           TEXT & 否 & 是 & 否 & 书名 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1622: Missing $ inserted.
+<inserted text> 
+                $
+l.1622         total_
+                     count & INTEGER & 否 & 是 & 否 & 总馆藏数量，�...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1622: Missing $ inserted.
+<inserted text> 
+                $
+l.1622         total_count &
+                             INTEGER & 否 & 是 & 否 & 总馆藏数量，�...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1624: Missing $ inserted.
+<inserted text> 
+                $
+l.1624         create_
+                      time & DATETIME & 否 & 是 & 否 & 入库时间 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1624: Missing $ inserted.
+<inserted text> 
+                $
+l.1624         create_time &
+                             DATETIME & 否 & 是 & 否 & 入库时间 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1626: Missing $ inserted.
+<inserted text> 
+                $
+l.1626         update_
+                      time & DATETIME & 否 & 是 & 否 & 更新时间 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1626: Missing $ inserted.
+<inserted text> 
+                $
+l.1626         update_time &
+                             DATETIME & 否 & 是 & 否 & 更新时间 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1631: Missing $ inserted.
+<inserted text> 
+                $
+l.1631 索引：isbn 唯一索引；book_
+                                         name 普通索引；author 普通�...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1632: Missing $ inserted.
+<inserted text> 
+                $
+l.1632 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1633: Missing $ inserted.
+<inserted text> 
+                $
+l.1633 ....2.3 借阅记录表（borrow_record）}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1633: Missing $ inserted.
+<inserted text> 
+                $
+l.1633 ....2.3 借阅记录表（borrow_record）}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1645: Missing $ inserted.
+<inserted text> 
+                $
+l.1645         book_
+                    name & TEXT & 否 & 是 & 否 & 书名 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1645: Missing $ inserted.
+<inserted text> 
+                $
+l.1645         book_name &
+                           TEXT & 否 & 是 & 否 & 书名 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1647: Missing $ inserted.
+<inserted text> 
+                $
+l.1647         borrower_
+                        name & TEXT & 否 & 是 & 否 & 借阅人姓名 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1647: Missing $ inserted.
+<inserted text> 
+                $
+l.1647         borrower_name &
+                               TEXT & 否 & 是 & 否 & 借阅人姓名 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1649: Missing $ inserted.
+<inserted text> 
+                $
+l.1649         borrower_
+                        phone & TEXT & 否 & 否 & 否 & 借阅人联系电�...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1649: Missing $ inserted.
+<inserted text> 
+                $
+l.1649         borrower_phone &
+                                TEXT & 否 & 否 & 否 & 借阅人联系电�...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1651: Missing $ inserted.
+<inserted text> 
+                $
+l.1651         borrow_
+                      time & DATETIME & 否 & 是 & 否 & 借阅时间 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1651: Missing $ inserted.
+<inserted text> 
+                $
+l.1651         borrow_time &
+                             DATETIME & 否 & 是 & 否 & 借阅时间 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1653: Missing $ inserted.
+<inserted text> 
+                $
+l.1653         return_
+                      time & DATETIME & 否 & 否 & 否 & 归还时间，未...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1653: Missing $ inserted.
+<inserted text> 
+                $
+l.1653         return_time &
+                             DATETIME & 否 & 否 & 否 & 归还时间，未...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (40.89159pt too wide) in paragraph at lines 1637--1658
+ [][] 
+ []
+
+[34]
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1660: Missing $ inserted.
+<inserted text> 
+                $
+l.1660 索引：isbn 普通索引；borrower_
+                                             name 普通索引；status 普�...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1661: Missing $ inserted.
+<inserted text> 
+                $
+l.1661 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1662: Missing $ inserted.
+<inserted text> 
+                $
+l.1662 ...n{8.2.4 系统配置表（sys_config）}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1662: Missing $ inserted.
+<inserted text> 
+                $
+l.1662 ...n{8.2.4 系统配置表（sys_config）}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1672: Missing $ inserted.
+<inserted text> 
+                $
+l.1672         config_
+                      key & TEXT & 否 & 是 & 是 & 配置键 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1672: Missing $ inserted.
+<inserted text> 
+                $
+l.1672         config_key &
+                            TEXT & 否 & 是 & 是 & 配置键 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1674: Missing $ inserted.
+<inserted text> 
+                $
+l.1674         config_
+                      value & TEXT & 否 & 是 & 否 & 配置值 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1674: Missing $ inserted.
+<inserted text> 
+                $
+l.1674         config_value &
+                              TEXT & 否 & 是 & 否 & 配置值 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1678: Missing $ inserted.
+<inserted text> 
+                $
+l.1678         create_
+                      time & DATETIME & 否 & 是 & 否 & 创建时间 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1678: Missing $ inserted.
+<inserted text> 
+                $
+l.1678         create_time &
+                             DATETIME & 否 & 是 & 否 & 创建时间 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1680: Missing $ inserted.
+<inserted text> 
+                $
+l.1680         update_
+                      time & DATETIME & 否 & 是 & 否 & 更新时间 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1680: Missing $ inserted.
+<inserted text> 
+                $
+l.1680         update_time &
+                             DATETIME & 否 & 是 & 否 & 更新时间 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1685: Missing $ inserted.
+<inserted text> 
+                $
+l.1685 ... 操作日志表（sys_operation_log）}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1685: Missing $ inserted.
+<inserted text> 
+                $
+l.1685 ... 操作日志表（sys_operation_log）}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1695: Missing $ inserted.
+<inserted text> 
+                $
+l.1695         user_
+                    id & TEXT & 否 & 是 & 否 & 操作人ID \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1695: Missing $ inserted.
+<inserted text> 
+                $
+l.1695         user_id &
+                         TEXT & 否 & 是 & 否 & 操作人ID \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1697: Missing $ inserted.
+<inserted text> 
+                $
+l.1697         user_
+                    name & TEXT & 否 & 是 & 否 & 操作人姓名 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1697: Missing $ inserted.
+<inserted text> 
+                $
+l.1697         user_name &
+                           TEXT & 否 & 是 & 否 & 操作人姓名 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1699: Missing $ inserted.
+<inserted text> 
+                $
+l.1699         operation_
+                         type & TEXT & 否 & 是 & 否 & 操作类型：登�...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1699: Missing $ inserted.
+<inserted text> 
+                $
+l.1699         operation_type &
+                                TEXT & 否 & 是 & 否 & 操作类型：登�...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1701: Missing $ inserted.
+<inserted text> 
+                $
+l.1701         operation_
+                         content & TEXT & 否 & 是 & 否 & 操作详情 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1701: Missing $ inserted.
+<inserted text> 
+                $
+l.1701         operation_content &
+                                   TEXT & 否 & 是 & 否 & 操作详情 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1703: Missing $ inserted.
+<inserted text> 
+                $
+l.1703         operation_
+                         result & TEXT & 否 & 是 & 否 & 操作结果：�...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1703: Missing $ inserted.
+<inserted text> 
+                $
+l.1703         operation_result &
+                                  TEXT & 否 & 是 & 否 & 操作结果：�...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1705: Missing $ inserted.
+<inserted text> 
+                $
+l.1705         operation_
+                         time & DATETIME & 否 & 是 & 否 & 操作时间 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1705: Missing $ inserted.
+<inserted text> 
+                $
+l.1705         operation_time &
+                                DATETIME & 否 & 是 & 否 & 操作时间 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1707: Missing $ inserted.
+<inserted text> 
+                $
+l.1707         ip_
+                  address & TEXT & 否 & 否 & 否 & 操作IP地址 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1707: Missing $ inserted.
+<inserted text> 
+                $
+l.1707         ip_address &
+                            TEXT & 否 & 否 & 否 & 操作IP地址 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (135.54385pt too wide) in paragraph at lines 1689--1710
+ [][] 
+ []
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1720: Missing $ inserted.
+<inserted text> 
+                $
+l.1720         CREATE TABLE IF NOT EXISTS sys_
+                                              user (\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1721: Missing $ inserted.
+<inserted text> 
+                $
+l.1721             i
+                    d TEXT PRIMARY KEY NOT NULL,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1722: Missing $ inserted.
+<inserted text> 
+                $
+l.1722             login_
+                         name TEXT NOT NULL UNIQUE,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1723: Missing $ inserted.
+<inserted text> 
+                $
+l.1723             p
+                    assword TEXT NOT NULL,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1724: Missing $ inserted.
+<inserted text> 
+                $
+l.1724             real_
+                        name TEXT NOT NULL,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1725: Missing $ inserted.
+<inserted text> 
+                $
+l.1725             r
+                    ole TEXT NOT NULL,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1726: Missing $ inserted.
+<inserted text> 
+                $
+l.1726             create_
+                          time DATETIME NOT NULL DEFAULT (datetime('now', 'l...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1727: Missing $ inserted.
+<inserted text> 
+                $
+l.1727             u
+                    pdate_time DATETIME NOT NULL DEFAULT (datetime('now', 'l...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1727: Missing $ inserted.
+<inserted text> 
+                $
+l.1727             update_
+                          time DATETIME NOT NULL DEFAULT (datetime('now', 'l...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1728: Missing $ inserted.
+<inserted text> 
+                $
+l.1728         )
+                ;\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1731: Missing $ inserted.
+<inserted text> 
+                $
+l.1731         CREATE TABLE IF NOT EXISTS book_
+                                               info (\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1732: Missing $ inserted.
+<inserted text> 
+                $
+l.1732             i
+                    d TEXT PRIMARY KEY NOT NULL,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1734: Missing $ inserted.
+<inserted text> 
+                $
+l.1734             book_
+                        name TEXT NOT NULL,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1735: Missing $ inserted.
+<inserted text> 
+                $
+l.1735             a
+                    uthor TEXT NOT NULL,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1738: Missing $ inserted.
+<inserted text> 
+                $
+l.1738             total_
+                         count INTEGER NOT NULL DEFAULT 0 CHECK (total_count...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1739: Missing $ inserted.
+<inserted text> 
+                $
+l.1739             c
+                    reate_time DATETIME NOT NULL DEFAULT (datetime('now', 'l...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1739: Missing $ inserted.
+<inserted text> 
+                $
+l.1739             create_
+                          time DATETIME NOT NULL DEFAULT (datetime('now', 'l...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1740: Missing $ inserted.
+<inserted text> 
+                $
+l.1740             u
+                    pdate_time DATETIME NOT NULL DEFAULT (datetime('now', 'l...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1740: Missing $ inserted.
+<inserted text> 
+                $
+l.1740             update_
+                          time DATETIME NOT NULL DEFAULT (datetime('now', 'l...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1741: Missing $ inserted.
+<inserted text> 
+                $
+l.1741         )
+                ;\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1744: Missing $ inserted.
+<inserted text> 
+                $
+l.1744         CREATE TABLE IF NOT EXISTS borrow_
+                                                 record (\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1745: Missing $ inserted.
+<inserted text> 
+                $
+l.1745             i
+                    d TEXT PRIMARY KEY NOT NULL,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1747: Missing $ inserted.
+<inserted text> 
+                $
+l.1747             book_
+                        name TEXT NOT NULL,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1748: Missing $ inserted.
+<inserted text> 
+                $
+l.1748             b
+                    orrower_name TEXT NOT NULL,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1748: Missing $ inserted.
+<inserted text> 
+                $
+l.1748             borrower_
+                            name TEXT NOT NULL,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1749: Missing $ inserted.
+<inserted text> 
+                $
+l.1749             b
+                    orrower_phone TEXT,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1749: Missing $ inserted.
+<inserted text> 
+                $
+l.1749             borrower_
+                            phone TEXT,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1750: Missing $ inserted.
+<inserted text> 
+                $
+l.1750             b
+                    orrow_time DATETIME NOT NULL DEFAULT (datetime('now', 'l...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1750: Missing $ inserted.
+<inserted text> 
+                $
+l.1750             borrow_
+                          time DATETIME NOT NULL DEFAULT (datetime('now', 'l...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1751: Missing $ inserted.
+<inserted text> 
+                $
+l.1751             r
+                    eturn_time DATETIME,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1751: Missing $ inserted.
+<inserted text> 
+                $
+l.1751             return_
+                          time DATETIME,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1752: Missing $ inserted.
+<inserted text> 
+                $
+l.1752             s
+                    tatus TEXT NOT NULL DEFAULT '未归还' CHECK (status IN...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1756: Missing $ inserted.
+<inserted text> 
+                $
+l.1756         CREATE TABLE IF NOT EXISTS sys_
+                                              config (\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1757: Missing $ inserted.
+<inserted text> 
+                $
+l.1757             i
+                    d TEXT PRIMARY KEY NOT NULL,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1758: Missing $ inserted.
+<inserted text> 
+                $
+l.1758             config_
+                          key TEXT NOT NULL UNIQUE,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1759: Missing $ inserted.
+<inserted text> 
+                $
+l.1759             c
+                    onfig_value TEXT NOT NULL,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1759: Missing $ inserted.
+<inserted text> 
+                $
+l.1759             config_
+                          value TEXT NOT NULL,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1760: Missing $ inserted.
+<inserted text> 
+                $
+l.1760             d
+                    escription TEXT,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1761: Missing $ inserted.
+<inserted text> 
+                $
+l.1761             create_
+                          time DATETIME NOT NULL DEFAULT (datetime('now', 'l...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1762: Missing $ inserted.
+<inserted text> 
+                $
+l.1762             u
+                    pdate_time DATETIME NOT NULL DEFAULT (datetime('now', 'l...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1762: Missing $ inserted.
+<inserted text> 
+                $
+l.1762             update_
+                          time DATETIME NOT NULL DEFAULT (datetime('now', 'l...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1763: Missing $ inserted.
+<inserted text> 
+                $
+l.1763         )
+                ;\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1766: Missing $ inserted.
+<inserted text> 
+                $
+l.1766         CREATE TABLE IF NOT EXISTS sys_
+                                              operation_log (\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1767: Missing $ inserted.
+<inserted text> 
+                $
+l.1767             i
+                    d TEXT PRIMARY KEY NOT NULL,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1768: Missing $ inserted.
+<inserted text> 
+                $
+l.1768             user_
+                        id TEXT NOT NULL,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1769: Missing $ inserted.
+<inserted text> 
+                $
+l.1769             u
+                    ser_name TEXT NOT NULL,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1769: Missing $ inserted.
+<inserted text> 
+                $
+l.1769             user_
+                        name TEXT NOT NULL,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1770: Missing $ inserted.
+<inserted text> 
+                $
+l.1770             o
+                    peration_type TEXT NOT NULL,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1770: Missing $ inserted.
+<inserted text> 
+                $
+l.1770             operation_
+                             type TEXT NOT NULL,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1771: Missing $ inserted.
+<inserted text> 
+                $
+l.1771             o
+                    peration_content TEXT NOT NULL,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1771: Missing $ inserted.
+<inserted text> 
+                $
+l.1771             operation_
+                             content TEXT NOT NULL,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1772: Missing $ inserted.
+<inserted text> 
+                $
+l.1772             o
+                    peration_result TEXT NOT NULL,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1772: Missing $ inserted.
+<inserted text> 
+                $
+l.1772             operation_
+                             result TEXT NOT NULL,\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1773: Missing $ inserted.
+<inserted text> 
+                $
+l.1773             o
+                    peration_time DATETIME NOT NULL DEFAULT (datetime('now',...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1773: Missing $ inserted.
+<inserted text> 
+                $
+l.1773             operation_
+                             time DATETIME NOT NULL DEFAULT (datetime('now',...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1774: Missing $ inserted.
+<inserted text> 
+                $
+l.1774             i
+                    p_address TEXT\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1774: Missing $ inserted.
+<inserted text> 
+                $
+l.1774             ip_
+                      address TEXT\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/HuYiZhou/Desktop/softengineering/documents1/designing model/设计文档.tex:1775: Missing $ inserted.
+<inserted text> 
+                $
+l.1775         )
+                ; \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (11.40099pt too wide) in paragraph at lines 1716--1778
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 167.46878pt on input line 1778.
+
+
+Overfull \hbox (271.21498pt too wide) in paragraph at lines 1786--1797
+ [][] 
+ []
+
+[35] [36]
+Overfull \hbox (347.66129pt too wide) in paragraph at lines 1803--1822
+ [][] 
+ []
+
+
+Overfull \hbox (233.02084pt too wide) in paragraph at lines 1828--1843
+ [][] 
+ []
+
+[37] [38] [39] [40]
+Overfull \hbox (8.10574pt too wide) in paragraph at lines 2000--2001
+[]\OT1/cmr/m/n/12 2. SQL\C70/rm/m/n/12/6c � \C70/rm/m/n/12/51 e \C70/rm/m/n/12/96 2 \C70/rm/m/n/12/62 �|\C70/rm/m/n/12/ff ^^Z| \C70/rm/m/n/12/62 @ \C70/rm/m/n/12/67 	 \C70/rm/m/n/12/65 p \C70/rm/m/n/12/63 n \C70/rm/m/n/12/5e � \C70/rm/m/n/12/67 � \C70/rm/m/n/12/8b � \C70/rm/m/n/12/57 G \C70/rm/m/n/12/91 � \C70/rm/m/n/12/75 ( \C70/rm/m/n/12/53 � \C70/rm/m/n/12/65 p \C70/rm/m/n/12/53 ^^V \C70/rm/m/n/12/67 � \C70/rm/m/n/12/8b �|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/4e ^^M \C70/rm/m/n/12/62 � \C70/rm/m/n/12/63 �\OT1/cmr/m/n/12 SQL\C70/rm/m/n/12/8b � \C70/rm/m/n/12/53 �|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/96 2 \C70/rm/m/n/12/6b b\OT1/cmr/m/n/12 SQL\C70/rm/m/n/12/6c �
+ []
+
+[41] [42]
+Overfull \hbox (104.63086pt too wide) in paragraph at lines 2066--2111
+ [][] 
+ []
+
+[43] [44] [45] [46] [47]
+Overfull \hbox (119.56499pt too wide) in paragraph at lines 2251--2266
+ [][] 
+ []
+
+[48] (./设计文档.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2022/07/14>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 8832 strings out of 467525
+ 157118 string characters out of 5411615
+ 572333 words of memory out of 5000000
+ 37234 multiletter control sequences out of 15000+600000
+ 701296 words of font info for 307 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 78i,16n,92p,785b,348s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont unisong25: wrong mapping: character 170 --> 0x25AA --> .notdef
+><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont unisong27: wrong mapping: character 5 --> 0x2705 --> .notdef
+
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont unisong27: wrong mapping: character 76 --> 0x274C --> .notdef
+><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc
+
+pdfTeX warning: pdflatex.exe (file c:/Windows/Fonts/simsun.ttc): subfont unisongff: wrong mapping: character 238 --> 0xFFEE --> .notdef
+><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><d:/program/latex/TexLive/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/program/latex/TexLive/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/program/latex/TexLive/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/program/latex/TexLive/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/program/latex/TexLive/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/program/latex/TexLive/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/program/latex/TexLive/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/program/latex/TexLive/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/program/latex/TexLive/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on 设计文档.pdf (48 pages, 824838 bytes).
+PDF statistics:
+ 856 PDF objects out of 1000 (max. 8388607)
+ 562 compressed objects within 6 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 313 words of extra memory for PDF output out of 10000 (max. 10000000)
+
