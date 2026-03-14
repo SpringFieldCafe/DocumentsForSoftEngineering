@@ -1658,7 +1658,7 @@ class BorrowRule:
         \hline
         real\_name & TEXT & 否 & 是 & 否 & 用户真实姓名 \\
         \hline
-        role & TEXT & 否 & 是 & 否 & 用户角色：普通用户/图书管理员/系统维护人员 \\
+        role & TEXT & 否 & 是 & 否 & 角色：用户/图书管理员/系统管理员\\
         \hline
         create\_time & DATETIME & 否 & 是 & 否 & 创建时间 \\
         \hline
@@ -1734,6 +1734,19 @@ class BorrowRule:
     \centering
     \begin{tabular}{|l|l|l|l|l|l|}
         \hline
+        字段名 & 类型 & 主键 & 非空 & 唯一 & 说明 \\
+        \hline
+        id & TEXT & 是 & 是 & 是 & 配置ID \\
+        \hline
+        config\_key & TEXT & 否 & 是 & 是 & 配置键 \\
+        \hline
+        config\_value & TEXT & 否 & 是 & 否 & 配置值 \\
+        \hline
+        description & TEXT & 否 & 否 & 否 & 配置说明 \\
+        \hline
+        create\_time & DATETIME & 否 & 是 & 否 & 创建时间 \\
+        \hline
+        update\_time & DATETIME & 否 & 是 & 否 & 更新时间 \\
         \hline
     \end{tabular}
 \end{table}
@@ -1742,16 +1755,102 @@ class BorrowRule:
 
 \begin{table}[H]
     \centering
-    \begin{tabular}{|l|l|l|l|l|l|}
+    \begin{tabularx}{\linewidth}{|l|l|l|l|l|X|}
         \hline
+        字段名 & 类型 & 主键 & 非空 & 唯一 & 说明 \\
         \hline
-    \end{tabular}
+        id & TEXT & 是 & 是 & 是 & 日志ID \\
+        \hline
+        user\_id & TEXT & 否 & 是 & 否 & 操作人ID \\
+        \hline
+        user\_name & TEXT & 否 & 是 & 否 & 操作人姓名 \\
+        \hline
+        operation\_type & TEXT & 否 & 是 & 否 & 操作类型：登录/新增/修改/删除/借阅/归还/备份/恢复 \\
+        \hline
+        operation\_content & TEXT & 否 & 是 & 否 & 操作详情 \\
+        \hline
+        operation\_result & TEXT & 否 & 是 & 否 & 操作结果：成功/失败 \\
+        \hline
+        operation\_time & DATETIME & 否 & 是 & 否 & 操作时间 \\
+        \hline
+        ip\_address & TEXT & 否 & 否 & 否 & 操作IP地址 \\
+        \hline
+    \end{tabularx}
 \end{table}
 
 \subsection{数据库初始化脚本}
 
 \begin{verbatim}
+-- 创建用户表
+CREATE TABLE IF NOT EXISTS sys_user (
+    id TEXT PRIMARY KEY NOT NULL,
+    login_name TEXT NOT NULL UNIQUE,
+    password TEXT NOT NULL,
+    real_name TEXT NOT NULL,
+    role TEXT NOT NULL,
+    create_time DATETIME NOT NULL DEFAULT (datetime('now', 'localtime')),
+    update_time DATETIME NOT NULL DEFAULT (datetime('now', 'localtime'))
+);
 
+-- 创建图书表
+CREATE TABLE IF NOT EXISTS book_info (
+    id TEXT PRIMARY KEY NOT NULL,
+    isbn TEXT NOT NULL UNIQUE,
+    book_name TEXT NOT NULL,
+    author TEXT NOT NULL,
+    publisher TEXT,
+    stock INTEGER NOT NULL DEFAULT 0 CHECK (stock >= 0),
+    total_count INTEGER NOT NULL DEFAULT 0 CHECK (total_count >= 0),
+    create_time DATETIME NOT NULL DEFAULT (datetime('now', 'localtime')),
+    update_time DATETIME NOT NULL DEFAULT (datetime('now', 'localtime'))
+);
+
+-- 创建借阅记录表
+CREATE TABLE IF NOT EXISTS borrow_record (
+    id TEXT PRIMARY KEY NOT NULL,
+    isbn TEXT NOT NULL,
+    book_name TEXT NOT NULL,
+    borrower_name TEXT NOT NULL,
+    borrower_phone TEXT,
+    borrow_time DATETIME NOT NULL DEFAULT (datetime('now', 'localtime')),
+    return_time DATETIME,
+    status TEXT NOT NULL DEFAULT '未归还' CHECK (status IN ('未归还', '已归还'))
+);
+
+-- 创建系统配置表
+CREATE TABLE IF NOT EXISTS sys_config (
+    id TEXT PRIMARY KEY NOT NULL,
+    config_key TEXT NOT NULL UNIQUE,
+    config_value TEXT NOT NULL,
+    description TEXT,
+    create_time DATETIME NOT NULL DEFAULT (datetime('now', 'localtime')),
+    update_time DATETIME NOT NULL DEFAULT (datetime('now', 'localtime'))
+);
+
+-- 创建操作日志表
+CREATE TABLE IF NOT EXISTS sys_operation_log (
+    id TEXT PRIMARY KEY NOT NULL,
+    user_id TEXT NOT NULL,
+    user_name TEXT NOT NULL,
+    operation_type TEXT NOT NULL,
+    operation_content TEXT NOT NULL,
+    operation_result TEXT NOT NULL,
+    operation_time DATETIME NOT NULL DEFAULT (datetime('now', 'localtime')),
+    ip_address TEXT
+);
+
+-- 创建索引
+CREATE INDEX IF NOT EXISTS idx_book_isbn ON book_info(isbn);
+CREATE INDEX IF NOT EXISTS idx_book_name ON book_info(book_name);
+CREATE INDEX IF NOT EXISTS idx_book_author ON book_info(author);
+CREATE INDEX IF NOT EXISTS idx_borrow_isbn ON borrow_record(isbn);
+CREATE INDEX IF NOT EXISTS idx_borrower_name ON borrow_record(borrower_name);
+CREATE INDEX IF NOT EXISTS idx_borrow_status ON borrow_record(status);
+CREATE INDEX IF NOT EXISTS idx_user_login_name ON sys_user(login_name);
+
+-- 初始化管理员用户（密码：admin123，已加密）
+INSERT OR IGNORE INTO sys_user (id, login_name, password, real_name, role)
+VALUES ('admin_001', 'admin', 'e10adc3949ba59abbe56e057f20f883e', '系统管理员', '系统维护人员');
 \end{verbatim}
 
 \section{工具与技术选型}
@@ -1837,11 +1936,12 @@ class BorrowRule:
         \hline
         Git & 代码版本管理 \\
         \hline
-        DrawIO & 流程图、架构图、UML图绘制 \\
+        PLantUML & 流程图、架构图、UML图绘制 \\
         \hline
     \end{tabular}
 \end{table}
 
+\newpage
 \section{复用性设计}
 
 减少重复代码，提升可维护性与可扩展性。
@@ -1890,6 +1990,7 @@ class BorrowRule:
 \item  接口版本控制：采用/api/v1的路径版本控制方式，后续接口迭代可兼容旧版本接口，实现接口的向后兼容复用。
 \end{enumerate}
 
+\newpage
 \section{跑批设计}
 
 \subsection{数据自动备份跑批}
@@ -1972,6 +2073,7 @@ class BorrowRule:
 \item  数据清理前必须完成全量数据备份，备份失败则终止清理操作
 \end{enumerate}
 
+\newpage
 \section{安全设计}
 
 \subsection{认证与授权安全}
@@ -2026,6 +2128,7 @@ class BorrowRule:
 \item  借阅记录不可篡改：借阅记录生成后，仅可更新归还时间与状态，不可修改借阅人、ISBN、借阅时间等核心信息，保证借阅记录的真实性与完整性。
 \end{enumerate}
 
+\newpage
 \section{性能设计}
 
 \subsection{查询性能优化}
@@ -2071,6 +2174,7 @@ class BorrowRule:
 \item  读写分离设计：预留读写分离扩展能力，查询操作走从库，写入操作走主库，为后续系统扩容提供支持。
 \end{enumerate}
 
+\newpage
 \section{统一错误码设计}
 
 系统采用统一的错误码规范，错误码为5位数字，前两位为模块编码，后三位为具体错误编码，便于问题定位与排查。
@@ -2124,6 +2228,7 @@ class BorrowRule:
     \end{tabularx}
 \end{table}
 
+\newpage
 \section{兼容性设计}
 
 \subsection{操作系统兼容性}
@@ -2220,6 +2325,7 @@ class BorrowRule:
 
 5. 敏感数据泄露测试：测试接口响应、页面展示，验证敏感数据是否脱敏，是否存在明文密码泄露。
 
+\newpage
 \section{部署与运维设计}
 
 \subsection{部署方式}
